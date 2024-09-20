@@ -31,48 +31,51 @@ class RoundButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: isPadding ? 20 : 0),
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      width: width,
-      decoration: BoxDecoration(
-          color: type == RoundButtonType.primary
-              ? AppColors.primary
-              : AppColors.textBackground,
-          border: type == RoundButtonType.line
-              ? Border.all(color: AppColors.board)
-              : null,
-          borderRadius: BorderRadius.circular(radius)),
-      height: height,
-      child: Row(
-        children: [
-          if (image != null)
-            SizedBox(
-              width: 60,
-              child: Image.asset(
-                image!,
-                width: 20,
-                height: 20,
+    return InkWell(
+      onTap: onPressed,
+      child: Container(
+        margin: EdgeInsets.symmetric(horizontal: isPadding ? 20 : 0),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        width: width,
+        decoration: BoxDecoration(
+            color: type == RoundButtonType.primary
+                ? AppColors.primary
+                : AppColors.textBackground,
+            border: type == RoundButtonType.line
+                ? Border.all(color: AppColors.board)
+                : null,
+            borderRadius: BorderRadius.circular(radius)),
+        height: height,
+        child: Row(
+          children: [
+            if (image != null)
+              SizedBox(
+                width: 60,
+                child: Image.asset(
+                  image!,
+                  width: 20,
+                  height: 20,
+                ),
+              ),
+            Expanded(
+              child: Text(
+                title,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: type == RoundButtonType.primary
+                      ? AppColors.buttonPrimaryText
+                      : AppColors.buttonSecondaryText,
+                  fontSize: fontSize,
+                  fontWeight: fontWeight,
+                ),
               ),
             ),
-          Expanded(
-            child: Text(
-              title,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: type == RoundButtonType.primary
-                    ? AppColors.buttonPrimaryText
-                    : AppColors.buttonSecondaryText,
-                fontSize: fontSize,
-                fontWeight: fontWeight,
-              ),
-            ),
-          ),
-          if (image != null)
-            Container(
-              width: 60,
-            )
-        ],
+            if (image != null)
+              Container(
+                width: 60,
+              )
+          ],
+        ),
       ),
     );
   }
