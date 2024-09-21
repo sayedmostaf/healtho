@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/assets.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
+import 'package:healtho/features/mobile_number/mobile_number_page.dart';
 import 'package:healtho/features/splash_page/splash_page.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -35,7 +36,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 isPadding: false,
                 image: AppAssets.phoneImage,
                 onPressed: () {
-                  context.push(const SplashPage());
+                  context.push(const MobileNumberPage());
                 }),
             const SizedBox(
               height: 30,
