@@ -5,4 +5,6 @@ class AppAssets {
   static const progressImage = 'assets/images/progress_image.png';
   static const phoneImage = 'assets/images/phone.png';
   static const googleImage = 'assets/images/google.png';
+  static const radioSelectedImage = 'assets/images/radio_select.png';
+  static const radioUnSelectedImage = 'assets/images/radio_unselect.png';
 }

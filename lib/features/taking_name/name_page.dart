@@ -4,6 +4,7 @@ import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
 import 'package:healtho/core/widgets/round_text_field.dart';
 import 'package:healtho/features/splash_page/splash_page.dart';
+import 'package:healtho/features/taking_goal/goal_page.dart';
 
 class NamePage extends StatefulWidget {
   const NamePage({super.key});
@@ -44,7 +45,7 @@ class _NamePageState extends State<NamePage> {
                 title: 'NEXT',
                 isPadding: false,
                 onPressed: () {
-                  context.push(const SplashPage());
+                  context.push(const GoalPage());
                 }),
             const Spacer(),
           ],
