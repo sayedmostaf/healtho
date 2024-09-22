@@ -3,7 +3,6 @@ import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
 import 'package:healtho/core/widgets/round_text_field.dart';
-import 'package:healtho/features/splash_page/splash_page.dart';
 import 'package:healtho/features/taking_goal/goal_page.dart';
 
 class NamePage extends StatefulWidget {

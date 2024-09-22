@@ -3,7 +3,6 @@ import 'package:healtho/core/utils/assets.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
 import 'package:healtho/features/mobile_number/mobile_number_page.dart';
-import 'package:healtho/features/splash_page/splash_page.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});
