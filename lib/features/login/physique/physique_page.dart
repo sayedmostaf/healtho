@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
-import 'package:healtho/features/physique/widgets/age_selector.dart';
-import 'package:healtho/features/physique/widgets/height_selector.dart';
-import 'package:healtho/features/physique/widgets/level_selector.dart';
-import 'package:healtho/features/physique/widgets/physique_page_title.dart';
-import 'package:healtho/features/physique/widgets/weight_selector.dart';
-import 'package:healtho/features/splash/splash_page.dart';
+import 'package:healtho/features/login/physique/widgets/age_selector.dart';
+import 'package:healtho/features/login/physique/widgets/height_selector.dart';
+import 'package:healtho/features/login/physique/widgets/level_selector.dart';
+import 'package:healtho/features/login/physique/widgets/physique_page_title.dart';
+import 'package:healtho/features/login/physique/widgets/weight_selector.dart';
+import 'package:healtho/features/login/splash/splash_page.dart';
 
 class PhysiquePage extends StatefulWidget {
   const PhysiquePage({super.key});

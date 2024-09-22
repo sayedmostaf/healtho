@@ -3,7 +3,7 @@ import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
 import 'package:healtho/core/widgets/round_text_field.dart';
-import 'package:healtho/features/otp/otp_page.dart';
+import 'package:healtho/features/login/otp/otp_page.dart';
 
 class MobileNumberPage extends StatefulWidget {
   const MobileNumberPage({super.key});

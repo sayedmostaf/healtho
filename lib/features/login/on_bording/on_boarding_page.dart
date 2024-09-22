@@ -3,10 +3,10 @@ import 'package:flutter/services.dart';
 import 'package:healtho/core/utils/assets.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
-import 'package:healtho/features/on_bording/widgets/on_boarding_appbar.dart';
-import 'package:healtho/features/on_bording/widgets/on_boarding_content.dart';
-import 'package:healtho/features/on_bording/widgets/on_boarding_indicator.dart';
-import 'package:healtho/features/sign_up/sign_up_page.dart';
+import 'package:healtho/features/login/on_bording/widgets/on_boarding_appbar.dart';
+import 'package:healtho/features/login/on_bording/widgets/on_boarding_content.dart';
+import 'package:healtho/features/login/on_bording/widgets/on_boarding_indicator.dart';
+import 'package:healtho/features/login/sign_up/sign_up_page.dart';
 
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({super.key});

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:healtho/core/widgets/round_title_value_button.dart';
-import 'package:healtho/features/select_height/select_height_page.dart';
+import 'package:healtho/features/login/select_weight/select_weight_page.dart';
 
-class HeightSelector extends StatelessWidget {
-  final String selectedHeight;
-  final ValueChanged<Map<String, String>> onChanged;
+class WeightSelector extends StatelessWidget {
+  final String selectedWeight;
+  final ValueChanged<String> onChanged;
 
-  const HeightSelector({
-    required this.selectedHeight,
+  const WeightSelector({
+    required this.selectedWeight,
     required this.onChanged,
     super.key,
   });
@@ -15,8 +15,8 @@ class HeightSelector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RoundTitleValueButton(
-      title: 'Height',
-      value: selectedHeight,
+      title: 'Weight',
+      value: selectedWeight,
       onPressed: () {
         showModalBottomSheet(
           backgroundColor: Colors.transparent,
@@ -24,7 +24,7 @@ class HeightSelector extends StatelessWidget {
           isScrollControlled: true,
           context: context,
           builder: (context) {
-            return SelectHeightPage(didChange: onChanged);
+            return SelectWeightPage(didChange: onChanged);
           },
         );
       },

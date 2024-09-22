@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
-import 'package:healtho/features/physique/physique_page.dart';
 
 class SelectAgePage extends StatefulWidget {
   const SelectAgePage({super.key, required this.didChange});

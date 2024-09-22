@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:healtho/core/widgets/round_title_value_button.dart';
-import 'package:healtho/features/select_weight/select_weight_page.dart';
+import 'package:healtho/features/login/select_age/select_age_page.dart';
 
-class WeightSelector extends StatelessWidget {
-  final String selectedWeight;
+class AgeSelector extends StatelessWidget {
+  final String selectedAge;
   final ValueChanged<String> onChanged;
 
-  const WeightSelector({
-    required this.selectedWeight,
+  const AgeSelector({
+    required this.selectedAge,
     required this.onChanged,
     super.key,
   });
@@ -15,8 +15,8 @@ class WeightSelector extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RoundTitleValueButton(
-      title: 'Weight',
-      value: selectedWeight,
+      title: 'Age',
+      value: '$selectedAge Yrs',
       onPressed: () {
         showModalBottomSheet(
           backgroundColor: Colors.transparent,
@@ -24,7 +24,7 @@ class WeightSelector extends StatelessWidget {
           isScrollControlled: true,
           context: context,
           builder: (context) {
-            return SelectWeightPage(didChange: onChanged);
+            return SelectAgePage(didChange: onChanged);
           },
         );
       },

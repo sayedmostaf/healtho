@@ -4,8 +4,7 @@ import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
 import 'package:healtho/core/widgets/round_select_button.dart';
-import 'package:healtho/features/physique/physique_page.dart';
-import 'package:healtho/features/splash/splash_page.dart';
+import 'package:healtho/features/login/physique/physique_page.dart';
 
 class GoalPage extends StatefulWidget {
   const GoalPage({super.key});

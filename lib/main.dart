@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:healtho/core/utils/colors.dart';
-import 'package:healtho/features/splash/splash_page.dart';
+import 'package:healtho/features/login/splash/splash_page.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    statusBarColor: Colors.white,
-    statusBarIconBrightness: Brightness.dark,
-  ));
   runApp(const MyApp());
 }
 
@@ -24,7 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
         appBarTheme: const AppBarTheme(
           elevation: 0,
-          backgroundColor: Colors.transparent,
+          backgroundColor: Colors.white,
         ),
         colorScheme: ColorScheme.fromSeed(
           seedColor: AppColors.primary,

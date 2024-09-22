@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:healtho/features/otp/widgets/otp_footer_option.dart';
-import 'package:healtho/features/otp/widgets/otp_input_field.dart';
-import 'package:healtho/features/otp/widgets/otp_intro_text.dart';
-import 'package:healtho/features/otp/widgets/otp_verfiy_button.dart';
+import 'package:healtho/features/login/otp/widgets/otp_footer_option.dart';
+import 'package:healtho/features/login/otp/widgets/otp_input_field.dart';
+import 'package:healtho/features/login/otp/widgets/otp_intro_text.dart';
+import 'package:healtho/features/login/otp/widgets/otp_verfiy_button.dart';
 import 'package:otp_text_field_v2/otp_field_v2.dart';
 
 class OTPPage extends StatefulWidget {
