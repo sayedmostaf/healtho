@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/features/on_bording/on_boarding_page.dart';
-import 'package:healtho/features/splash_page/widgets/splash_body.dart';
+import 'package:healtho/features/splash/widgets/splash_body.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});

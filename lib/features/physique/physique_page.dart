@@ -6,7 +6,7 @@ import 'package:healtho/features/physique/widgets/height_selector.dart';
 import 'package:healtho/features/physique/widgets/level_selector.dart';
 import 'package:healtho/features/physique/widgets/physique_page_title.dart';
 import 'package:healtho/features/physique/widgets/weight_selector.dart';
-import 'package:healtho/features/splash_page/splash_page.dart';
+import 'package:healtho/features/splash/splash_page.dart';
 
 class PhysiquePage extends StatefulWidget {
   const PhysiquePage({super.key});
@@ -25,41 +25,41 @@ class _PhysiquePageState extends State<PhysiquePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 45),
-          child: Column(
-            children: [
-              const SizedBox(height: 20),
-              const PageTitle(),
-              const SizedBox(height: 40),
-              AgeSelector(
-                selectedAge: selectedAge,
-                onChanged: (val) => setState(() => selectedAge = val),
-              ),
-              HeightSelector(
-                selectedHeight: selectedHeight,
-                onChanged: (val) => setState(() {
-                  selectedHeight = '${val['ft']} ${val['inch']}';
-                }),
-              ),
-              WeightSelector(
-                selectedWeight: selectedWeight,
-                onChanged: (val) => setState(() => selectedWeight = val),
-              ),
-              LevelSelector(
-                selectedLevel: selectedLevel,
-                onChanged: (val) => setState(() => selectedLevel = val),
-              ),
-              const SizedBox(height: 40),
-              RoundButton(
+        child: Column(
+          children: [
+            const SizedBox(height: 20),
+            const PageTitle(),
+            const SizedBox(height: 40),
+            AgeSelector(
+              selectedAge: selectedAge,
+              onChanged: (val) => setState(() => selectedAge = val),
+            ),
+            HeightSelector(
+              selectedHeight: selectedHeight,
+              onChanged: (val) => setState(() {
+                selectedHeight = '${val['ft']} ${val['inch']}';
+              }),
+            ),
+            WeightSelector(
+              selectedWeight: selectedWeight,
+              onChanged: (val) => setState(() => selectedWeight = val),
+            ),
+            LevelSelector(
+              selectedLevel: selectedLevel,
+              onChanged: (val) => setState(() => selectedLevel = val),
+            ),
+            const SizedBox(height: 40),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: RoundButton(
                 title: 'Confirm',
                 onPressed: () {
                   context.push(const SplashPage());
                 },
                 isPadding: false,
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

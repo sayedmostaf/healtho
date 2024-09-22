@@ -4,8 +4,9 @@ import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/radio_button.dart';
 
 class SelectLevelPage extends StatefulWidget {
-  const SelectLevelPage({super.key, required this.didChange});
   final ValueChanged<String> didChange;
+  const SelectLevelPage({super.key, required this.didChange});
+
   @override
   State<SelectLevelPage> createState() => _SelectLevelPageState();
 }
@@ -21,7 +22,7 @@ class _SelectLevelPageState extends State<SelectLevelPage> {
       color: Colors.black45,
       alignment: Alignment.center,
       child: Container(
-        width: context.width * .6,
+        width: context.width * 0.6,
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(
@@ -30,9 +31,11 @@ class _SelectLevelPageState extends State<SelectLevelPage> {
         ),
         padding: const EdgeInsets.all(20),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              'Select your level',
+              "Select your Level",
               style: TextStyle(
                 color: AppColors.primaryText,
                 fontSize: 15,
@@ -43,7 +46,7 @@ class _SelectLevelPageState extends State<SelectLevelPage> {
               height: 25,
             ),
             RadioButton(
-                title: 'Beginner',
+                title: "Beginner",
                 isSelect: selectType == 0,
                 onPressed: () {
                   setState(() {
@@ -52,23 +55,23 @@ class _SelectLevelPageState extends State<SelectLevelPage> {
                   widget.didChange("Beginner");
                 }),
             RadioButton(
-                title: 'Intermediage',
+                title: "Intermediate",
                 isSelect: selectType == 1,
                 onPressed: () {
                   setState(() {
                     selectType = 1;
                   });
-                  widget.didChange("Intermediage");
+                  widget.didChange("Intermediate");
                 }),
             RadioButton(
-                title: 'Advance',
+                title: "Advance",
                 isSelect: selectType == 2,
                 onPressed: () {
                   setState(() {
                     selectType = 2;
                   });
                   widget.didChange("Advance");
-                }),
+                })
           ],
         ),
       ),

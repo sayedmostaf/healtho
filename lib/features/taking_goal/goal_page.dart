@@ -4,7 +4,8 @@ import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
 import 'package:healtho/core/widgets/round_select_button.dart';
-import 'package:healtho/features/splash_page/splash_page.dart';
+import 'package:healtho/features/physique/physique_page.dart';
+import 'package:healtho/features/splash/splash_page.dart';
 
 class GoalPage extends StatefulWidget {
   const GoalPage({super.key});
@@ -65,7 +66,7 @@ class _GoalPageState extends State<GoalPage> {
                   title: 'DONE',
                   isPadding: false,
                   onPressed: () {
-                    context.push(const SplashPage());
+                    context.push(const PhysiquePage());
                   }),
               const Spacer(),
             ],

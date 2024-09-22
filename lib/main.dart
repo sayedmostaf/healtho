@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:healtho/core/utils/colors.dart';
-import 'package:healtho/features/splash_page/splash_page.dart';
+import 'package:healtho/features/splash/splash_page.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
