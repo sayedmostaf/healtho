@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:healtho/core/utils/assets.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/features/login/on_bording/on_boarding_page.dart';
-import 'package:healtho/features/login/splash/widgets/splash_body.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -28,8 +28,13 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SplashBody(),
+    return Scaffold(
+      body: Center(
+        child: Image.asset(
+          AppAssets.logo,
+          width: context.width * .65,
+        ),
+      ),
     );
   }
 }

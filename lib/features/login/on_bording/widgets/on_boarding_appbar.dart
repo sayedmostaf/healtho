@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
-import 'package:healtho/features/login/sign_up/sign_up_page.dart';
+import 'package:healtho/features/login/sign_up_page.dart';
 
 class OnBoardingAppbar extends StatelessWidget implements PreferredSizeWidget {
   const OnBoardingAppbar({super.key});

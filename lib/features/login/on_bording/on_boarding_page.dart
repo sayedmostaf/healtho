@@ -6,7 +6,7 @@ import 'package:healtho/core/widgets/round_button.dart';
 import 'package:healtho/features/login/on_bording/widgets/on_boarding_appbar.dart';
 import 'package:healtho/features/login/on_bording/widgets/on_boarding_content.dart';
 import 'package:healtho/features/login/on_bording/widgets/on_boarding_indicator.dart';
-import 'package:healtho/features/login/sign_up/sign_up_page.dart';
+import 'package:healtho/features/login/sign_up_page.dart';
 
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({super.key});

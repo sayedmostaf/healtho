@@ -6,7 +6,7 @@ import 'package:healtho/features/login/physique/widgets/height_selector.dart';
 import 'package:healtho/features/login/physique/widgets/level_selector.dart';
 import 'package:healtho/features/login/physique/widgets/physique_page_title.dart';
 import 'package:healtho/features/login/physique/widgets/weight_selector.dart';
-import 'package:healtho/features/login/splash/splash_page.dart';
+import 'package:healtho/features/login/splash_page.dart';
 
 class PhysiquePage extends StatefulWidget {
   const PhysiquePage({super.key});

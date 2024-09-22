@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/colors.dart';
-import 'package:healtho/features/login/splash/splash_page.dart';
+import 'package:healtho/features/login/splash_page.dart';
 
 void main() {
   runApp(const MyApp());

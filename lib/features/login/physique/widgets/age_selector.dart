@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healtho/core/widgets/round_title_value_button.dart';
-import 'package:healtho/features/login/select_age/select_age_page.dart';
+import 'package:healtho/features/login/select_age_page.dart';
 
 class AgeSelector extends StatelessWidget {
   final String selectedAge;
