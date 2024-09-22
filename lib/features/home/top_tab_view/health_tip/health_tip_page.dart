@@ -14,19 +14,19 @@ class HealthTipPage extends StatefulWidget {
 class _HealthTipPageState extends State<HealthTipPage> {
   List data = [
     {
-      "title:": "A diet without exercise is useless. ",
+      "title": "A diet without exercise is useless. ",
       "subTitle":
           "Interval training is a form of exercise in which you. alternate between  or more exercise..",
       "image": AppAssets.tipOneImage,
     },
     {
-      "title:": "Garlic as fresh and sweet as baby's breath. ",
+      "title": "Garlic as fresh and sweet as baby's breath. ",
       "subTitle":
           "Garlic is the plant in the onion family that's grown alternate between  or more exercise..",
       "image": AppAssets.tipTwoImage,
     },
     {
-      "title:": "Garlic as fresh and sweet as baby's breath. ",
+      "title": "Garlic as fresh and sweet as baby's breath. ",
       "subTitle":
           "Garlic is the plant in the onion family that's grown alternate between  or more exercise..",
       "image": AppAssets.tipThreeImage,
@@ -37,20 +37,22 @@ class _HealthTipPageState extends State<HealthTipPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.separated(
-          itemBuilder: (context, index) {
-            var obj = data[index] as Map? ?? {};
-            return HealthTipRow(
-                object: obj,
-                onPressed: () {
-                  context.push(const HealthTipsDetailsPage());
-                });
-          },
-          separatorBuilder: (context, index) {
-            return const SizedBox(
-              height: 20,
-            );
-          },
-          itemCount: data.length),
+        // padding: const EdgeInsets.symmetric(horizontal: 15),
+        itemBuilder: (context, index) {
+          var obj = data[index] as Map? ?? {};
+          return HealthTipRow(
+              object: obj,
+              onPressed: () {
+                context.push(const HealthTipsDetailsPage());
+              });
+        },
+        separatorBuilder: (context, index) {
+          return const SizedBox(
+            height: 20,
+          );
+        },
+        itemCount: data.length,
+      ),
     );
   }
 }
