@@ -12,14 +12,14 @@ class SelectAgePage extends StatefulWidget {
 }
 
 class _SelectAgePageState extends State<SelectAgePage> {
-  List valueArr = [];
+  List values = [];
 
   @override
   void initState() {
     super.initState();
 
     for (var i = 1; i < 120; i++) {
-      valueArr.add({"name": "$i", "value": i});
+      values.add({"name": "$i", "value": i});
     }
   }
 
@@ -38,7 +38,7 @@ class _SelectAgePageState extends State<SelectAgePage> {
             20,
           ),
         ),
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -62,10 +62,10 @@ class _SelectAgePageState extends State<SelectAgePage> {
                     child: CupertinoPicker(
                       itemExtent: 32,
                       onSelectedItemChanged: (value) {
-                        widget.didChange(valueArr[value]["name"]);
+                        widget.didChange(values[value]["name"]);
                       },
-                      children: List<Widget>.generate(valueArr.length, (index) {
-                        var obj = valueArr[index];
+                      children: List<Widget>.generate(values.length, (index) {
+                        var obj = values[index];
                         return Text("${obj["name"]}");
                       }),
                     ),
