@@ -11,4 +11,10 @@ class AppAssets {
   static const downImage = 'assets/images/down.png';
   static const checkTickImage = 'assets/images/check_tick.png';
   static const unCheckTickImage = 'assets/images/uncheck.png';
+  static const tipOneImage = 'assets/images/home_1.png';
+  static const tipTwoImage = 'assets/images/home_2.png';
+  static const tipThreeImage = 'assets/images/home_3.png';
+  static const backImage = 'assets/images/back.png';
+  static const favColorImage = 'assets/images/fav_color.png';
+  static const shareImage = 'assets/images/share.png';
 }
