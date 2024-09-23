@@ -50,4 +50,12 @@ class AppAssets {
 
   static const deleteImage = 'assets/images/delete.png';
   static const addBigImage = 'assets/images/add_big.png';
+  static const challengeOneImage = 'assets/images/challenge_1.png';
+  static const challengeTwoImage = 'assets/images/challenge_2.png';
+  static const challengeThreeImage = 'assets/images/challenge_3.png';
+  static const challengeFourImage = 'assets/images/challenge_4.png';
+  static const challengeFiveImage = 'assets/images/challenge_5.png';
+  static const challengeSixImage = 'assets/images/challenge_6.png';
+  static const challengeSevenImage = 'assets/images/challenge_7.png';
+  static const challengeEightImage = 'assets/images/challenge_8.png';
 }
