@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
+import 'package:healtho/features/home/notifications/notification_page.dart';
 import 'package:healtho/features/home/top_tab_view/exercises/exercise_tab_page.dart';
 import 'package:healtho/features/home/top_tab_view/trainer/trainer_tab_page.dart';
 import 'package:healtho/features/login/physique/widgets/age_selector.dart';
@@ -55,7 +56,7 @@ class _PhysiquePageState extends State<PhysiquePage> {
               child: RoundButton(
                 title: 'Confirm',
                 onPressed: () {
-                  context.push(const TrainerTabPage());
+                  context.push(const NotificationPage());
                 },
                 isPadding: false,
               ),
