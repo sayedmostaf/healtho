@@ -33,4 +33,19 @@ class AppAssets {
   static const pressFourImage = 'assets/images/press_4.png';
   static const pressFiveImage = 'assets/images/press_5.png';
   static const downWhiteImage = 'assets/images/down_white.png';
+  static const locationImage = 'assets/images/location.png';
+  static const trainerProfileImage = 'assets/images/trainer_profile.png';
+  static const twiteerImage = 'assets/images/twiter.png';
+  static const colorFacebookImage = 'assets/images/color_facebook.png';
+  static const instaImage = 'assets/images/insta.png';
+  static const youtubeImage = 'assets/images/youtube.png';
+
+  static const trainerOneImage = 'assets/images/trainer_1.png';
+  static const trainerTwoImage = 'assets/images/trainer_2.png';
+  static const trainerThreeImage = 'assets/images/trainer_3.png';
+  static const trainerFourImage = 'assets/images/trainer_4.png';
+  static const trainerFiveImage = 'assets/images/trainer_5.png';
+  static const trainerSixImage = 'assets/images/trainer_6.png';
+  static const trainerSevenImage = 'assets/images/trainer_7.png';
+
 }

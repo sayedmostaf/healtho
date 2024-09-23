@@ -17,6 +17,7 @@ class TitleSubtitleButton extends StatelessWidget {
       child: InkWell(
         onTap: onPressed,
         child: Container(
+          width: double.maxFinite,
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
           decoration: BoxDecoration(
             color: AppColors.textBackground,
