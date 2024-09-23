@@ -48,4 +48,6 @@ class AppAssets {
   static const trainerSixImage = 'assets/images/trainer_6.png';
   static const trainerSevenImage = 'assets/images/trainer_7.png';
 
+  static const deleteImage = 'assets/images/delete.png';
+  static const addBigImage = 'assets/images/add_big.png';
 }
