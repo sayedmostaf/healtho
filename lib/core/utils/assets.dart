@@ -17,4 +17,20 @@ class AppAssets {
   static const backImage = 'assets/images/back.png';
   static const favColorImage = 'assets/images/fav_color.png';
   static const shareImage = 'assets/images/share.png';
+  static const favWhiteImage = 'assets/images/fav_white.png';
+  static const shareWhiteImage = 'assets/images/share_white.png';
+  static const chestImage = 'assets/images/chest.png';
+  static const backBodyImage = 'assets/images/back_body.png';
+  static const bicepsImage = 'assets/images/biceps.png';
+  static const tricepsImage = 'assets/images/triceps.png';
+  static const shouldersImage = 'assets/images/shoulders.png';
+  static const absImage = 'assets/images/abs.png';
+  static const legsImage = 'assets/images/legs.png';
+  static const chestTwoImage = 'assets/images/chest_2.png';
+  static const pressOneImage = 'assets/images/press_1.png';
+  static const pressTwoImage = 'assets/images/press_2.png';
+  static const pressThreeImage = 'assets/images/press_3.png';
+  static const pressFourImage = 'assets/images/press_4.png';
+  static const pressFiveImage = 'assets/images/press_5.png';
+  static const downWhiteImage = 'assets/images/down_white.png';
 }
