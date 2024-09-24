@@ -6,7 +6,6 @@ import 'package:healtho/features/home/notifications/notification_page.dart';
 import 'package:healtho/features/home/reminder/reminder_page.dart';
 import 'package:healtho/features/home/settings/setting_profile_page.dart';
 import 'package:healtho/features/home/settings/widgets/setting_row.dart';
-import 'package:healtho/features/home/top_tab_view/trainer/trainer_profile_page.dart';
 
 class SettingPage extends StatefulWidget {
   const SettingPage({super.key});

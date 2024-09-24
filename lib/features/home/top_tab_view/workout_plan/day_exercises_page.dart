@@ -3,6 +3,7 @@ import 'package:healtho/core/utils/assets.dart';
 import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/day_exercises_row.dart';
+import 'package:healtho/features/home/top_tab_view/workout_plan/workout_exercises_page.dart';
 
 class DayExercisesPage extends StatefulWidget {
   const DayExercisesPage({super.key});
@@ -98,7 +99,7 @@ class _DayExercisesPageState extends State<DayExercisesPage> {
           return DayExercisesRow(
               object: object,
               onPressed: () {
-                context.push(const WorkoutExercisesDetailPage());
+                context.push(const WorkoutExercisesDetailsPage());
               });
         },
         separatorBuilder: (context, index) => const SizedBox(

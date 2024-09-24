@@ -6,6 +6,7 @@ import 'package:healtho/core/widgets/round_button.dart';
 import 'package:healtho/core/widgets/secrtion_button.dart';
 import 'package:healtho/features/home/top_tab_view/workout_plan/add_plan_page.dart';
 import 'package:healtho/features/home/top_tab_view/workout_plan/find_workout_plan_page.dart';
+import 'package:healtho/features/home/top_tab_view/workout_plan/workout_details_page.dart';
 
 class WorkoutPlanPage extends StatefulWidget {
   const WorkoutPlanPage({super.key});
@@ -74,7 +75,7 @@ class _WorkoutPlanPageState extends State<WorkoutPlanPage> {
                     var object = musclesData[index] as Map? ?? {};
                     return InkWell(
                       onTap: () {
-                        context.push(const WorkoutDetailPage());
+                        context.push(const WorkoutDetailsPage());
                       },
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(15),

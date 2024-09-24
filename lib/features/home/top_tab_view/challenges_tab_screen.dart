@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/assets.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/features/home/top_tab_view/exercises/widgets/exercises_cell.dart';
+import 'package:healtho/features/home/top_tab_view/workout_plan/workout_details_page.dart';
 
 class ChallengesTabScreen extends StatefulWidget {
   const ChallengesTabScreen({super.key});
@@ -71,7 +72,7 @@ class _ChallengesTabScreenState extends State<ChallengesTabScreen> {
           return ExercisesCell(
               object: object,
               onPressed: () {
-                context.push(const WorkoutDetailsScreen());
+                context.push(const WorkoutDetailsPage());
               });
         },
       ),
