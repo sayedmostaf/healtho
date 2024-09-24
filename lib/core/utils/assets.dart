@@ -72,4 +72,10 @@ class AppAssets {
   static const goalImage = 'assets/images/goal.png';
   static const challengesImage = 'assets/images/challenges.png';
   static const calenderImage = 'assets/images/calendar.png';
+
+  static const dayOneImage = 'assets/images/day_1.png';
+  static const dayTwoImage = 'assets/images/day_2.png';
+  static const dayThreeImage = 'assets/images/day_3.png';
+  static const dayFourImage = 'assets/images/day_4.png';
+  static const dayFiveImage = 'assets/images/day_5.png';
 }

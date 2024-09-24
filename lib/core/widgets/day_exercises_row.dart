@@ -4,8 +4,8 @@ import 'package:healtho/core/utils/colors.dart';
 
 class DayExercisesRow extends StatelessWidget {
   const DayExercisesRow(
-      {super.key, required this.obj, required this.onPressed});
-  final Map obj;
+      {super.key, required this.object, required this.onPressed});
+  final Map object;
   final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class DayExercisesRow extends StatelessWidget {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: Image.asset(
-                      obj['image'],
+                      object['image'],
                       width: 60,
                       height: 60,
                       fit: BoxFit.cover,
@@ -41,7 +41,7 @@ class DayExercisesRow extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          obj['name'],
+                          object['name'],
                           style: TextStyle(
                             color: AppColors.primaryText,
                             fontSize: 14,
@@ -61,7 +61,7 @@ class DayExercisesRow extends StatelessWidget {
                             ),
                             Expanded(
                               child: Text(
-                                obj["sets"],
+                                object["sets"],
                                 style: TextStyle(
                                   color: AppColors.placeholder,
                                   fontSize: 12,
@@ -84,7 +84,7 @@ class DayExercisesRow extends StatelessWidget {
                             ),
                             Expanded(
                               child: Text(
-                                obj["reps"],
+                                object["reps"],
                                 style: TextStyle(
                                   color: AppColors.placeholder,
                                   fontSize: 12,
@@ -107,7 +107,7 @@ class DayExercisesRow extends StatelessWidget {
                             ),
                             Expanded(
                               child: Text(
-                                obj["reset"],
+                                object["reset"],
                                 style: TextStyle(
                                   color: AppColors.placeholder,
                                   fontSize: 12,
@@ -140,7 +140,7 @@ class DayExercisesRow extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    obj['isComplete']
+                    object['isComplete']
                         ? AppAssets.checkTickImage
                         : AppAssets.unCheckTickImage,
                     width: 20,
@@ -151,7 +151,7 @@ class DayExercisesRow extends StatelessWidget {
                   Text(
                     'Mark as completed',
                     style: TextStyle(
-                      color: obj['isComplete']
+                      color: object['isComplete']
                           ? const Color(0xff27AE60)
                           : AppColors.placeholder,
                       fontSize: 14,
