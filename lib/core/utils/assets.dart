@@ -88,4 +88,5 @@ class AppAssets {
   static const workPlanFourImage = 'assets/images/wp_4.png';
 
   static const searchCircleImage = 'assets/images/search_circle.png';
+  static const completedTasksImage = 'assets/images/completed_tasks.png';
 }

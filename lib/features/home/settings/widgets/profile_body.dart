@@ -89,7 +89,7 @@ class ProfileBody extends StatelessWidget {
         ),
         SettingRow(
           title: "Complete Task",
-          icon: "assets/img/completed_tasks.png",
+          icon: AppAssets.completedTasksImage,
           value: "3",
           onPressed: () {},
         ),
