@@ -53,8 +53,8 @@ class _AddPlanPageState extends State<AddPlanPage> {
         child: Column(
           children: [
             // Plan Name Input
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 15),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 15),
               child: RoundTextField(
                 hintText: 'Plan Name',
                 radius: 10,
@@ -70,7 +70,7 @@ class _AddPlanPageState extends State<AddPlanPage> {
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: 'Goal',
-                list: [
+                list: const [
                   {'name': 'Lose Weight'},
                   {'name': 'Build Muscle'},
                   {'name': 'Maintain Fitness'},
@@ -88,7 +88,7 @@ class _AddPlanPageState extends State<AddPlanPage> {
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: 'Duration',
-                list: [
+                list: const [
                   {'name': '10 min'},
                   {'name': '20 min'},
                   {'name': '30 min'},
@@ -107,7 +107,7 @@ class _AddPlanPageState extends State<AddPlanPage> {
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: 'Choose Level',
-                list: [
+                list:const [
                   {'name': 'Beginner'},
                   {'name': 'Intermediate'},
                   {'name': 'Advanced'},

@@ -54,7 +54,7 @@ class _FindWorkoutPlanPageState extends State<FindWorkoutPlanPage> {
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: "Choose Goal",
-                list: [
+                list: const[
                   {"name": "Lose Weight"},
                   {"name": "Build Muscle"},
                 ],
@@ -70,7 +70,7 @@ class _FindWorkoutPlanPageState extends State<FindWorkoutPlanPage> {
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: "Choose Level",
-                list: [
+                list: const [
                   {"name": "Beginner"},
                   {"name": "Intermediate"},
                 ],
@@ -86,7 +86,7 @@ class _FindWorkoutPlanPageState extends State<FindWorkoutPlanPage> {
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: "No of weeks",
-                list: [
+                list: const [
                   {"name": "1"},
                   {"name": "2"},
                 ],
@@ -102,7 +102,7 @@ class _FindWorkoutPlanPageState extends State<FindWorkoutPlanPage> {
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: "Days per week",
-                list: [
+                list: const [
                   {"name": "3"},
                   {"name": "5"},
                 ],

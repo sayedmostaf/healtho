@@ -4,7 +4,6 @@ import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/features/home/top_tab_view/exercises/widgets/exercises_row.dart';
 import 'package:healtho/features/home/top_tab_view/workout_plan/workout_exercises_page.dart';
-import 'package:healtho/features/login/splash_page.dart';
 
 class ExerciseBody extends StatelessWidget {
   const ExerciseBody({super.key, required this.data});
