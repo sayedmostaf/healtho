@@ -14,6 +14,12 @@ class AddPlanPage extends StatefulWidget {
 }
 
 class _AddPlanPageState extends State<AddPlanPage> {
+  // State variables to store user input
+  String? planName;
+  String? selectedGoal;
+  String? selectedDuration;
+  String? selectedLevel;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,53 +52,93 @@ class _AddPlanPageState extends State<AddPlanPage> {
         ),
         child: Column(
           children: [
-            const Padding(
+            // Plan Name Input
+            Padding(
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundTextField(
                 hintText: 'Plan Name',
                 radius: 10,
+                // onChanged: (value) {
+                //   setState(() {
+                //     planName = value; // Store the plan name
+                //   });
+                // },
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 15),
+            // Goal Dropdown
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: 'Goal',
                 list: [
-                  {'name': 'Goal'},
-                  {'name': 'Goal'},
+                  {'name': 'Lose Weight'},
+                  {'name': 'Build Muscle'},
+                  {'name': 'Maintain Fitness'},
                 ],
+                value: selectedGoal, // Set the initial value
+                didChange: (value) {
+                  setState(() {
+                    selectedGoal = value['name']; // Store the selected goal
+                  });
+                },
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 15),
+            // Duration Dropdown
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: 'Duration',
                 list: [
                   {'name': '10 min'},
                   {'name': '20 min'},
+                  {'name': '30 min'},
                 ],
+                value: selectedDuration, // Set the initial value
+                didChange: (value) {
+                  setState(() {
+                    selectedDuration =
+                        value['name']; // Store the selected duration
+                  });
+                },
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 15),
+            // Level Dropdown
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: 'Choose Level',
                 list: [
-                  {'name': '1'},
-                  {'name': '2'},
+                  {'name': 'Beginner'},
+                  {'name': 'Intermediate'},
+                  {'name': 'Advanced'},
                 ],
+                value: selectedLevel, // Set the initial value
+                didChange: (value) {
+                  setState(() {
+                    selectedLevel = value['name']; // Store the selected level
+                  });
+                },
               ),
             ),
             const SizedBox(
               height: 50,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30),
-              child: RoundButton(
-                title: 'Add Plan',
-                onPressed: () {},
-              ),
-            )
+            RoundButton(
+              title: 'Add Plan',
+              onPressed: () {
+                if (planName != null &&
+                    selectedGoal != null &&
+                    selectedDuration != null &&
+                    selectedLevel != null) {
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Please fill out all fields'),
+                    ),
+                  );
+                }
+              },
+            ),
           ],
         ),
       ),

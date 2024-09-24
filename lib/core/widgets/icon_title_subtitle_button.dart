@@ -32,7 +32,7 @@ class IconTitleSubtitleButton extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
               const SizedBox(
-                height: 15,
+                width: 15,
               ),
               Expanded(
                 child: Column(

@@ -107,7 +107,7 @@ class DayExercisesRow extends StatelessWidget {
                             ),
                             Expanded(
                               child: Text(
-                                object["reset"],
+                                object["rest"],
                                 style: TextStyle(
                                   color: AppColors.placeholder,
                                   fontSize: 12,

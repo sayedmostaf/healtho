@@ -20,7 +20,7 @@ class _DayExercisesPageState extends State<DayExercisesPage> {
       "reps": "12 - 10 - 0",
       "rest": "30 Sec",
       "image": AppAssets.dayOneImage,
-      "is_complete": false,
+      "isComplete": false,
     },
     {
       "name": "Bench Press",
@@ -28,7 +28,7 @@ class _DayExercisesPageState extends State<DayExercisesPage> {
       "reps": "12 - 10 - 0",
       "rest": "30 Sec",
       "image": AppAssets.dayTwoImage,
-      "is_complete": true,
+      "isComplete": true,
     },
     {
       "name": "Bench Press",
@@ -36,7 +36,7 @@ class _DayExercisesPageState extends State<DayExercisesPage> {
       "reps": "12 - 10 - 0",
       "rest": "30 Sec",
       "image": AppAssets.dayThreeImage,
-      "is_complete": false,
+      "isComplete": false,
     },
     {
       "name": "Bench Press",
@@ -44,7 +44,7 @@ class _DayExercisesPageState extends State<DayExercisesPage> {
       "reps": "12 - 10 - 0",
       "rest": "30 Sec",
       "image": AppAssets.dayFourImage,
-      "is_complete": false,
+      "isComplete": false,
     },
     {
       "name": "Bench Press",
@@ -52,7 +52,7 @@ class _DayExercisesPageState extends State<DayExercisesPage> {
       "reps": "12 - 10 - 0",
       "rest": "30 Sec",
       "image": AppAssets.dayFiveImage,
-      "is_complete": false,
+      "isComplete": false,
     },
   ];
 

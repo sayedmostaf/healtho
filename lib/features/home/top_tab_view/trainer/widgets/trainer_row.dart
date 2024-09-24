@@ -74,7 +74,7 @@ class TrainerRow extends StatelessWidget {
                             color: Colors.amber,
                           ),
                           onRatingUpdate: (rating) {
-                            print(rating);
+                            // print(rating);
                           },
                         ),
                       ),

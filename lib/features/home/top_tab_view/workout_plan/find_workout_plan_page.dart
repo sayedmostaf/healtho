@@ -13,6 +13,11 @@ class FindWorkoutPlanPage extends StatefulWidget {
 }
 
 class _FindWorkoutPlanPageState extends State<FindWorkoutPlanPage> {
+  String? selectedGoal;
+  String? selectedLevel;
+  String? selectedWeeks;
+  String? selectedDays;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,46 +50,77 @@ class _FindWorkoutPlanPageState extends State<FindWorkoutPlanPage> {
         ),
         child: Column(
           children: [
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 15),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: RoundDropdown(
                 hintText: "Choose Goal",
                 list: [
-                  {"name": "Goal"},
-                  {"name": "Goal"},
+                  {"name": "Lose Weight"},
+                  {"name": "Build Muscle"},
                 ],
+                value: selectedGoal, // Set the initial value
+                didChange: (value) {
+                  setState(() {
+                    selectedGoal = value['name']; // Update the selected value
+                  });
+                },
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 15),
-              child: RoundDropdown(hintText: "Choose Level", list: [
-                {"name": "Level 1"},
-                {"name": "Level 2"},
-              ]),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15),
+              child: RoundDropdown(
+                hintText: "Choose Level",
+                list: [
+                  {"name": "Beginner"},
+                  {"name": "Intermediate"},
+                ],
+                value: selectedLevel,
+                didChange: (value) {
+                  setState(() {
+                    selectedLevel = value['name'];
+                  });
+                },
+              ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 15),
-              child: RoundDropdown(hintText: "No of weeks", list: [
-                {"name": "1"},
-                {"name": "2"},
-              ]),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15),
+              child: RoundDropdown(
+                hintText: "No of weeks",
+                list: [
+                  {"name": "1"},
+                  {"name": "2"},
+                ],
+                value: selectedWeeks,
+                didChange: (value) {
+                  setState(() {
+                    selectedWeeks = value['name'];
+                  });
+                },
+              ),
             ),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 15),
-              child: RoundDropdown(hintText: "Days per week", list: [
-                {"name": "1"},
-                {"name": "2"},
-              ]),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15),
+              child: RoundDropdown(
+                hintText: "Days per week",
+                list: [
+                  {"name": "3"},
+                  {"name": "5"},
+                ],
+                value: selectedDays,
+                didChange: (value) {
+                  setState(() {
+                    selectedDays = value['name'];
+                  });
+                },
+              ),
             ),
             const SizedBox(
               height: 50,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30),
-              child: RoundButton(
-                title: 'Find Workout Plan',
-                onPressed: () {},
-              ),
+            RoundButton(
+              title: 'Find Workout Plan',
+              onPressed: () {
+              },
             )
           ],
         ),

@@ -66,7 +66,7 @@ class _WorkoutPlanPageState extends State<WorkoutPlanPage> {
                 onPressed: () {},
               ),
               SizedBox(
-                height: (context.width * 35) + 16,
+                height: (context.width * .35) + 16,
                 child: ListView.separated(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 8),

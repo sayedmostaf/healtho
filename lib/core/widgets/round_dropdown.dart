@@ -32,6 +32,7 @@ class RoundDropdown extends StatelessWidget {
       ),
       child: DropdownButtonHideUnderline(
         child: DropdownButton(
+          hint: Text(hintText),
           isExpanded: true,
           value: value,
           icon: Image.asset(

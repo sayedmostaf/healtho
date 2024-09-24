@@ -4,53 +4,53 @@ import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/features/home/top_tab_view/exercises/widgets/exercises_cell.dart';
 import 'package:healtho/features/home/top_tab_view/workout_plan/workout_details_page.dart';
 
-class ChallengesTabScreen extends StatefulWidget {
-  const ChallengesTabScreen({super.key});
+class ChallengesTabPage extends StatefulWidget {
+  const ChallengesTabPage({super.key});
 
   @override
-  State<ChallengesTabScreen> createState() => _ChallengesTabScreenState();
+  State<ChallengesTabPage> createState() => _ChallengesTabPageState();
 }
 
-class _ChallengesTabScreenState extends State<ChallengesTabScreen> {
+class _ChallengesTabPageState extends State<ChallengesTabPage> {
   List data = [
     {
       "title": "Bench Press",
-      "subtitle": "5 Week",
+      "subTitle": "5 Week",
       "image": AppAssets.challengeOneImage
     },
     {
       "title": "200 Situps",
-      "subtitle": "10 Week",
+      "subTitle": "10 Week",
       "image": AppAssets.challengeTwoImage
     },
     {
       "title": "100 Pushups",
-      "subtitle": "8 Week",
+      "subTitle": "8 Week",
       "image": AppAssets.challengeThreeImage
     },
     {
       "title": "300 Squats",
-      "subtitle": "5 Week",
+      "subTitle": "5 Week",
       "image": AppAssets.challengeFourImage
     },
     {
       "title": "Run 5 Km",
-      "subtitle": "S Week",
+      "subTitle": "S Week",
       "image": AppAssets.challengeFiveImage
     },
     {
       "title": "300 Pushups",
-      "subtitle": "14 Week",
+      "subTitle": "14 Week",
       "image": AppAssets.challengeSixImage
     },
     {
       "title": "200 Pushups",
-      "subtitle": "10 Week",
+      "subTitle": "10 Week",
       "image": AppAssets.challengeSevenImage
     },
     {
       "title": "100 Pullups",
-      "subtitle": "10 Week",
+      "subTitle": "10 Week",
       "image": AppAssets.challengeEightImage
     },
   ];
@@ -64,7 +64,7 @@ class _ChallengesTabScreenState extends State<ChallengesTabScreen> {
           crossAxisCount: 2,
           childAspectRatio: 1,
           crossAxisSpacing: 15,
-          mainAxisExtent: 15,
+          mainAxisSpacing: 15,
         ),
         itemCount: data.length,
         itemBuilder: (context, index) {

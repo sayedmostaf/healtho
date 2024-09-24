@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/colors.dart';
-import 'package:healtho/features/home/top_tab_view/trainer/trainer_profile_page.dart';
 import 'package:healtho/features/home/top_tab_view/trainer/widgets/trainer_certifications_awards_section.dart';
 import 'package:healtho/features/home/top_tab_view/trainer/widgets/trainer_profile_header.dart';
 import 'package:healtho/features/home/top_tab_view/trainer/widgets/trainer_social_media_section.dart';

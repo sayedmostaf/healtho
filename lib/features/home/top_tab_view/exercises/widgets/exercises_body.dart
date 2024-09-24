@@ -3,6 +3,7 @@ import 'package:healtho/core/utils/assets.dart';
 import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/features/home/top_tab_view/exercises/widgets/exercises_row.dart';
+import 'package:healtho/features/home/top_tab_view/workout_plan/workout_exercises_page.dart';
 import 'package:healtho/features/login/splash_page.dart';
 
 class ExerciseBody extends StatelessWidget {
@@ -58,7 +59,8 @@ class ExerciseBody extends StatelessWidget {
                   var obj = data[index] as Map? ?? {};
                   return ExercisesRow(
                     object: obj,
-                    onPressed: () => context.push(const SplashPage()),
+                    onPressed: () =>
+                        context.push(const WorkoutExercisesDetailsPage()),
                   );
                 },
                 separatorBuilder: (context, index) => const SizedBox(
