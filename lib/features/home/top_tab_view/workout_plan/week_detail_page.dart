@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/assets.dart';
 import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
+import 'package:healtho/features/home/top_tab_view/workout_plan/day_exercises_page.dart';
 import 'package:healtho/features/home/top_tab_view/workout_plan/widgets/week_day_exercise_row.dart';
 
 class WeekDetailPage extends StatefulWidget {
@@ -95,7 +96,7 @@ class _WeekDetailPageState extends State<WeekDetailPage> {
           return WeekDayExerciseRow(
               object: object,
               onPressed: () {
-                context.push(const DayExercisePage());
+                context.push(const DayExercisesPage());
               });
         },
         separatorBuilder: (context, index) => const SizedBox(

@@ -78,4 +78,14 @@ class AppAssets {
   static const dayThreeImage = 'assets/images/day_3.png';
   static const dayFourImage = 'assets/images/day_4.png';
   static const dayFiveImage = 'assets/images/day_5.png';
+
+  static const exerciseOneImage = 'assets/images/ed_1.png';
+  static const exerciseTwoImage = 'assets/images/ed_2.png';
+
+  static const workPlanOneImage = 'assets/images/wp_1.png';
+  static const workPlanTwoImage = 'assets/images/wp_2.png';
+  static const workPlanThreeImage = 'assets/images/wp_3.png';
+  static const workPlanFourImage = 'assets/images/wp_4.png';
+
+  static const searchCircleImage = 'assets/images/search_circle.png';
 }
