@@ -58,4 +58,18 @@ class AppAssets {
   static const challengeSixImage = 'assets/images/challenge_6.png';
   static const challengeSevenImage = 'assets/images/challenge_7.png';
   static const challengeEightImage = 'assets/images/challenge_8.png';
+
+  static const dataImage = 'assets/images/data.png';
+  static const feedbackImage = 'assets/images/feedback.png';
+  static const languageImage = 'assets/images/language.png';
+  static const logoutImage = 'assets/images/logout.png';
+  static const notificationImage = 'assets/images/notification.png';
+  static const ratingImage = 'assets/images/rating.png';
+  static const userPlaceholderImage = 'assets/images/user_placeholder.png';
+
+  static const smartWatchImage = 'assets/images/smartwatch.png';
+  static const levelImage = 'assets/images/level.png';
+  static const goalImage = 'assets/images/goal.png';
+  static const challengesImage = 'assets/images/challenges.png';
+  static const calenderImage = 'assets/images/calendar.png';
 }
