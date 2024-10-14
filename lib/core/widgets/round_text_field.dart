@@ -20,34 +20,51 @@ class RoundTextField extends StatelessWidget {
   final bool isPadding;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 50,
-      margin: EdgeInsets.symmetric(horizontal: isPadding ? 20 : 0),
-      decoration: BoxDecoration(
-          color: AppColors.textBackground,
-          border: Border.all(
-            color: AppColors.board,
-            width: 1,
+    return TextFormField(
+      validator: (value) {
+        if (value == null || value.trim().isEmpty) {
+          return 'this field is required';
+        } else {
+          return null;
+        }
+      },
+      controller: controller,
+      keyboardType: keyboardType,
+      obscureText: obscureText,
+      style: TextStyle(color: AppColors.primaryText, fontSize: 16),
+      decoration: InputDecoration(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(20.0),
+            ),
           ),
-          borderRadius: BorderRadius.circular(radius)),
-      child: TextField(
-        controller: controller,
-        keyboardType: keyboardType,
-        obscureText: obscureText,
-        style: TextStyle(color: AppColors.primaryText, fontSize: 16),
-        decoration: InputDecoration(
-            contentPadding:
-                const EdgeInsetsDirectional.symmetric(horizontal: 20),
-            enabledBorder: InputBorder.none,
-            focusedBorder: InputBorder.none,
-            hintText: hintText,
-            suffixIcon: right,
-            hintStyle: TextStyle(
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(20.0),
+            ),
+            borderSide: BorderSide(
               color: AppColors.placeholder,
-              fontSize: 15,
-              fontWeight: FontWeight.w600,
-            )),
-      ),
+              width: 2.0,
+            ),
+          ),
+          contentPadding:
+              const EdgeInsetsDirectional.symmetric(horizontal: 20),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(20.0),
+            ),
+            borderSide: BorderSide(
+              color: AppColors.placeholder,
+              width: 2.0,
+            ),
+          ),
+          hintText: hintText,
+          suffixIcon: right,
+          hintStyle: TextStyle(
+            color: AppColors.placeholder,
+            fontSize: 15,
+            fontWeight: FontWeight.w600,
+          )),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/assets.dart';
 import 'package:healtho/core/utils/functions/navigation.dart';
 import 'package:healtho/core/widgets/round_button.dart';
+import 'package:healtho/features/login/google_page.dart';
 import 'package:healtho/features/login/mobile_number_page.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -45,7 +46,9 @@ class _SignUpPageState extends State<SignUpPage> {
                 type: RoundButtonType.line,
                 isPadding: false,
                 image: AppAssets.googleImage,
-                onPressed: () {}),
+                onPressed: () {
+                  context.push(const GooglePage());
+                }),
             const Spacer(),
           ],
         ),

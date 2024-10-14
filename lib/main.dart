@@ -1,8 +1,14 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/features/login/splash_page.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+Future<void> main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
