@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "850391513480",
+    "project_id": "healtho-2ff65",
+    "storage_bucket": "healtho-2ff65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850391513480:android:e302ec8833ba8bb036a23d",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE6h1qjLtwSkcprcLtO3h2sCIP_H3LWeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
