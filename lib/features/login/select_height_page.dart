@@ -12,22 +12,15 @@ class SelectHeightPage extends StatefulWidget {
 }
 
 class _SelectHeightPageState extends State<SelectHeightPage> {
-  List valueFt = [];
-  List valueInch = [];
-
-  int selectFt = 0;
-  int selectInch = 0;
+  List valueCm = [];
+  int selectCm = 170;
 
   @override
   void initState() {
     super.initState();
 
-    for (var i = 2; i < 11; i++) {
-      valueFt.add({"name": "$i Ft", "value": i});
-    }
-
-    for (var i = 0; i < 12; i++) {
-      valueInch.add({"name": "$i Inch", "value": i});
+    for (var i = 90; i < 290; i++) {
+      valueCm.add({"name": "$i Cm"});
     }
   }
 
@@ -70,15 +63,11 @@ class _SelectHeightPageState extends State<SelectHeightPage> {
                     child: CupertinoPicker(
                       itemExtent: 32,
                       onSelectedItemChanged: (value) {
-                        selectFt = value;
-                        widget.didChange({
-                          "ft": valueFt[selectFt]["name"],
-                          "inch": valueInch[selectInch]["name"],
-                        });
+                        selectCm = value;
+                        widget.didChange({"cm": valueCm[selectCm]["name"]});
                       },
-                      children: List<Widget>.generate(valueFt.length, (index) {
-                        var obj = valueFt[index];
-
+                      children: List<Widget>.generate(valueCm.length, (index) {
+                        var obj = valueCm[index];
                         return Text("${obj["name"]}");
                       }),
                     ),
@@ -86,23 +75,6 @@ class _SelectHeightPageState extends State<SelectHeightPage> {
                   const SizedBox(
                     width: 15,
                   ),
-                  Expanded(
-                    child: CupertinoPicker(
-                      itemExtent: 32,
-                      onSelectedItemChanged: (value) {
-                        selectInch = value;
-                        widget.didChange({
-                          "ft": valueFt[selectFt]["name"],
-                          "inch": valueInch[selectInch]["name"],
-                        });
-                      },
-                      children: List<Widget>.generate(valueFt.length, (index) {
-                        var obj = valueInch[index];
-
-                        return Text("${obj["name"]}");
-                      }),
-                    ),
-                  )
                 ],
               ),
             )

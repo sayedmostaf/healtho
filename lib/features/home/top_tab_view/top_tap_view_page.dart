@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/core/widgets/top_tab_button.dart';
-import 'package:healtho/features/home/notifications/notification_page.dart';
-import 'package:healtho/features/home/reminder/reminder_page.dart';
-import 'package:healtho/features/home/settings/setting_page.dart';
-import 'package:healtho/features/home/settings/setting_profile_page.dart';
-import 'package:healtho/features/home/top_tab_view/challenges_tab_screen.dart';
-import 'package:healtho/features/home/top_tab_view/dietician_tab_page.dart';
+import 'package:healtho/features/home/profile/setting_profile_page.dart';
 import 'package:healtho/features/home/top_tab_view/exercises/exercise_tab_page.dart';
 import 'package:healtho/features/home/top_tab_view/health_tip/health_tip_page.dart';
-import 'package:healtho/features/home/top_tab_view/trainer/trainer_profile_page.dart';
-import 'package:healtho/features/home/top_tab_view/trainer/trainer_tab_page.dart';
-import 'package:healtho/features/home/top_tab_view/workout_plan/workout_plan_page.dart';
 
 class TopTapViewPage extends StatefulWidget {
-  const TopTapViewPage({super.key});
+  const TopTapViewPage({
+    super.key,
+    required this.age,
+    required this.height,
+    required this.weight,
+    required this.name,
+    required this.email,
+  });
+
+  final String age, height, weight, name, email;
 
   @override
   State<TopTapViewPage> createState() => _TopTapViewPageState();
@@ -25,10 +26,6 @@ class _TopTapViewPageState extends State<TopTapViewPage>
   var tapsPages = [
     "Health Tips",
     "Exercises",
-    "Workout Plan",
-    "Challenges",
-    "Trainers",
-    "Dietician",
   ];
 
   int selectedTab = 0;
@@ -38,23 +35,12 @@ class _TopTapViewPageState extends State<TopTapViewPage>
   static const List<Widget> _topTabPages = <Widget>[
     HealthTipPage(),
     ExercisesPage(),
-    WorkoutPlanPage(),
-    ChallengesTabPage(),
-    TrainerTabPage(),
-    DieticianTabPage(),
-  ];
-
-  static const List<Widget> _bottomNavPages = <Widget>[
-    NotificationPage(),
-    ReminderPage(),
-    SettingPage(),
-    SettingProfilePage(),
   ];
 
   @override
   void initState() {
     super.initState();
-    controller = TabController(length: 6, vsync: this);
+    controller = TabController(length: 2, vsync: this);
     controller?.addListener(() {
       setState(() {
         selectedTab = controller?.index.round() ?? 0;
@@ -70,6 +56,18 @@ class _TopTapViewPageState extends State<TopTapViewPage>
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> _bottomNavPages() {
+      return [
+        SettingProfilePage(
+          age: widget.age,
+          height: widget.height,
+          weight: widget.weight,
+          name: widget.name,
+          email: widget.email,
+        ),
+      ];
+    }
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.secondary,
@@ -122,24 +120,12 @@ class _TopTapViewPageState extends State<TopTapViewPage>
                 ),
               ],
             )
-          : _bottomNavPages[_selectedIndex - 1],
+          : _bottomNavPages()[_selectedIndex - 1],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.dashboard),
             label: 'Dashboard',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Notifications',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.timer),
-            label: 'Reminder',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),

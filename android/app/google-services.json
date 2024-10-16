@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:850391513480:android:e302ec8833ba8bb036a23d",
         "android_client_info": {
-          "package_name": "com.android.application"
+          "package_name": "com.example.healtho"
         }
       },
       "oauth_client": [],

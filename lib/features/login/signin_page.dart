@@ -42,13 +42,12 @@ class _LoginPageState extends State<SigninPage> {
                 ),
                 RoundTextField(
                   controller: loginEmailController,
-                  hintText: 'shahd@gmail.com',
-                  keyboardType: TextInputType.number,
+                  hintText: 'Enter your email',
+                  keyboardType: TextInputType.emailAddress,
                 ),
                 const SizedBox(
                   height: 40,
                 ),
-
                 Text(
                   'Password',
                   style: TextStyle(
@@ -62,23 +61,21 @@ class _LoginPageState extends State<SigninPage> {
                 ),
                 RoundTextField(
                   controller: loginPasswordController,
-                  hintText: '12345677',
-                  keyboardType: TextInputType.number,
+                  hintText: 'Enter your password',
+                  keyboardType: TextInputType.visiblePassword,
                 ),
                 const SizedBox(
                   height: 40,
                 ),
-
                 RoundButton(
                   title: 'Sign In',
                   onPressed: () async {
-
                     if (loginFormKey.currentState!.validate()) {
                       try {
                         UserCredential user = await FirebaseAuth.instance
                             .signInWithEmailAndPassword(
-                            email: loginEmailController.text,
-                            password: loginPasswordController.text);
+                                email: loginEmailController.text,
+                                password: loginPasswordController.text);
 
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
@@ -96,9 +93,10 @@ class _LoginPageState extends State<SigninPage> {
                             ),
                           ),
                         );
-                        Future.delayed(const Duration(seconds: 3), () {
-                            context.push(const PhysiquePage());
-                        });
+                        context.push(PhysiquePage(
+                          name: loginEmailController.text,
+                          email: loginEmailController.text,
+                        ));
                       } on FirebaseAuthException catch (e) {
                         String message;
                         if (e.code == 'user-not-found') {
@@ -112,7 +110,8 @@ class _LoginPageState extends State<SigninPage> {
                           SnackBar(
                             backgroundColor: Colors.red,
                             content: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 15.0),
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 15.0),
                               child: Text(message,
                                   style: const TextStyle(
                                     fontSize: 16,
@@ -122,13 +121,13 @@ class _LoginPageState extends State<SigninPage> {
                             ),
                           ),
                         );
-                        print(e.toString());
                       } on Exception catch (e) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             backgroundColor: Colors.red,
                             content: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 15.0),
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 15.0),
                               child: Text(e.toString(),
                                   style: const TextStyle(
                                     fontSize: 16,
@@ -144,7 +143,8 @@ class _LoginPageState extends State<SigninPage> {
                           SnackBar(
                             backgroundColor: Colors.red,
                             content: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 15.0),
+                              padding:
+                                  const EdgeInsets.symmetric(vertical: 15.0),
                               child: Text(e.toString(),
                                   style: const TextStyle(
                                     fontSize: 16,
@@ -160,7 +160,6 @@ class _LoginPageState extends State<SigninPage> {
                   },
                   isPadding: false,
                 ),
-
                 const Spacer(
                   flex: 2,
                 ),

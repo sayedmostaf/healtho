@@ -4,12 +4,12 @@ import 'package:healtho/core/widgets/round_button.dart';
 import 'package:healtho/features/home/top_tab_view/top_tap_view_page.dart';
 import 'package:healtho/features/login/physique/widgets/age_selector.dart';
 import 'package:healtho/features/login/physique/widgets/height_selector.dart';
-import 'package:healtho/features/login/physique/widgets/level_selector.dart';
 import 'package:healtho/features/login/physique/widgets/physique_page_title.dart';
 import 'package:healtho/features/login/physique/widgets/weight_selector.dart';
 
 class PhysiquePage extends StatefulWidget {
-  const PhysiquePage({super.key});
+  const PhysiquePage({super.key, required this.email, required this.name});
+  final String email, name;
 
   @override
   State<PhysiquePage> createState() => _PhysiquePageState();
@@ -17,9 +17,8 @@ class PhysiquePage extends StatefulWidget {
 
 class _PhysiquePageState extends State<PhysiquePage> {
   String selectedAge = '19';
-  String selectedHeight = '6 Ft 4 Inch';
+  String selectedHeight = '170 Cm';
   String selectedWeight = '82 KG';
-  String selectedLevel = 'Beginner';
 
   @override
   Widget build(BuildContext context) {
@@ -37,16 +36,12 @@ class _PhysiquePageState extends State<PhysiquePage> {
             HeightSelector(
               selectedHeight: selectedHeight,
               onChanged: (val) => setState(() {
-                selectedHeight = '${val['ft']} ${val['inch']}';
+                selectedHeight = '${val['cm']}';
               }),
             ),
             WeightSelector(
               selectedWeight: selectedWeight,
               onChanged: (val) => setState(() => selectedWeight = val),
-            ),
-            LevelSelector(
-              selectedLevel: selectedLevel,
-              onChanged: (val) => setState(() => selectedLevel = val),
             ),
             const SizedBox(height: 40),
             Padding(
@@ -54,7 +49,13 @@ class _PhysiquePageState extends State<PhysiquePage> {
               child: RoundButton(
                 title: 'Confirm',
                 onPressed: () {
-                  context.push(const TopTapViewPage());
+                  context.push(TopTapViewPage(
+                    age: selectedAge,
+                    height: selectedHeight,
+                    weight: selectedWeight,
+                    name: widget.name,
+                    email: widget.email,
+                  ));
                 },
                 isPadding: false,
               ),

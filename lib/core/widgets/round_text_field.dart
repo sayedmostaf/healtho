@@ -33,13 +33,13 @@ class RoundTextField extends StatelessWidget {
       obscureText: obscureText,
       style: TextStyle(color: AppColors.primaryText, fontSize: 16),
       decoration: InputDecoration(
-          border: OutlineInputBorder(
+          border: const OutlineInputBorder(
             borderRadius: BorderRadius.all(
               Radius.circular(20.0),
             ),
           ),
           focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.all(
+            borderRadius: const BorderRadius.all(
               Radius.circular(20.0),
             ),
             borderSide: BorderSide(
@@ -47,10 +47,9 @@ class RoundTextField extends StatelessWidget {
               width: 2.0,
             ),
           ),
-          contentPadding:
-              const EdgeInsetsDirectional.symmetric(horizontal: 20),
+          contentPadding: const EdgeInsetsDirectional.symmetric(horizontal: 20),
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.all(
+            borderRadius:const BorderRadius.all(
               Radius.circular(20.0),
             ),
             borderSide: BorderSide(

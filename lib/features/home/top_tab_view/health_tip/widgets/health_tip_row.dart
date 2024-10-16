@@ -2,10 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:healtho/core/utils/colors.dart';
 
 class HealthTipRow extends StatelessWidget {
-  const HealthTipRow(
-      {super.key, required this.object, required this.onPressed});
-  final Map object;
+  final Map<String, dynamic> object;
   final VoidCallback onPressed;
+
+  const HealthTipRow({
+    super.key,
+    required this.object,
+    required this.onPressed,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,15 +29,13 @@ class HealthTipRow extends StatelessWidget {
             alignment: Alignment.topCenter,
             children: [
               Padding(
-                padding: const EdgeInsets.only(
-                  top: 50,
-                ),
+                padding: const EdgeInsets.only(top: 50),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(12),
                   child: AspectRatio(
                     aspectRatio: 2,
                     child: Image.asset(
-                      object['image'],
+                      object['photo'],
                       width: double.maxFinite,
                       height: double.maxFinite,
                       fit: BoxFit.cover,
@@ -52,16 +55,20 @@ class HealthTipRow extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      object['title'],
-                      style: TextStyle(
-                        color: AppColors.primaryText,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w500,
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(5),
+                      child: Text(
+                        object['title'],
+                        style: TextStyle(
+                          color: AppColors.primaryText,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                     ),
                     Text(
-                      object['subTitle'],
+                      object['brief'],
                       style: TextStyle(
                         color: AppColors.primaryText,
                         fontSize: 10,

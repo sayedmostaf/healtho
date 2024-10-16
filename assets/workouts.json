@@ -1,0 +1,1217 @@
+{
+    "workout": {
+        "chest": [
+            {
+                "title": "Bench Press",
+                "photo": "https://example.com/photos/bench_press.jpg",
+                "description": "A classic compound exercise to build chest, shoulders, and triceps strength.",
+                "steps": [
+                    "Lie flat on the bench with feet firmly planted on the ground.",
+                    "Grip the bar slightly wider than shoulder-width.",
+                    "Lower the bar to your chest.",
+                    "Press it back up until arms are fully extended."
+                ],
+                "equipment_required": "Barbell, Bench",
+                "target_muscles": [
+                    "Chest",
+                    "Triceps",
+                    "Shoulders"
+                ]
+            },
+            {
+                "title": "Incline Dumbbell Press",
+                "photo": "https://example.com/photos/incline_dumbbell_press.jpg",
+                "description": "Targets the upper part of the chest.",
+                "steps": [
+                    "Set an incline bench at 30-45 degrees.",
+                    "Hold dumbbells at shoulder height.",
+                    "Press the weights up until arms are extended.",
+                    "Lower slowly to the starting position."
+                ],
+                "equipment_required": "Dumbbells, Incline Bench",
+                "target_muscles": [
+                    "Upper Chest",
+                    "Shoulders"
+                ]
+            },
+            {
+                "title": "Chest Fly",
+                "photo": "https://example.com/photos/chest_fly.jpg",
+                "description": "Isolation exercise for inner chest.",
+                "steps": [
+                    "Lie on a flat bench with dumbbells in hand.",
+                    "Open your arms wide, feeling the stretch in your chest.",
+                    "Bring the weights back together above your chest."
+                ],
+                "equipment_required": "Dumbbells, Bench",
+                "target_muscles": [
+                    "Chest"
+                ]
+            },
+            {
+                "title": "Push-Ups",
+                "photo": "https://example.com/photos/pushups.jpg",
+                "description": "A bodyweight exercise targeting chest and triceps.",
+                "steps": [
+                    "Start in a high plank position.",
+                    "Lower your body down, bending elbows.",
+                    "Push yourself back up."
+                ],
+                "equipment_required": "Bodyweight",
+                "target_muscles": [
+                    "Chest",
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Decline Bench Press",
+                "photo": "https://example.com/photos/decline_bench_press.jpg",
+                "description": "Focuses on the lower chest.",
+                "steps": [
+                    "Set the bench to a decline position.",
+                    "Lower the bar to the lower chest.",
+                    "Press it back up to full arm extension."
+                ],
+                "equipment_required": "Barbell, Decline Bench",
+                "target_muscles": [
+                    "Lower Chest",
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Cable Chest Fly",
+                "photo": "https://example.com/photos/cable_chest_fly.jpg",
+                "description": "Isolates the chest using cable machines.",
+                "steps": [
+                    "Stand between the cables, arms extended.",
+                    "Bring the handles together in front of you.",
+                    "Slowly return to the starting position."
+                ],
+                "equipment_required": "Cable Machine",
+                "target_muscles": [
+                    "Chest"
+                ]
+            },
+            {
+                "title": "Chest Dips",
+                "photo": "https://example.com/photos/chest_dips.jpg",
+                "description": "Targets lower chest and triceps.",
+                "steps": [
+                    "Grasp the dip bars with arms extended.",
+                    "Lower your body by bending elbows.",
+                    "Push back up to starting position."
+                ],
+                "equipment_required": "Dip Bars",
+                "target_muscles": [
+                    "Chest",
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Pec Deck Machine",
+                "photo": "https://example.com/photos/pec_deck.jpg",
+                "description": "Machine-based chest isolation exercise.",
+                "steps": [
+                    "Sit on the pec deck machine.",
+                    "Bring the handles together in front of you.",
+                    "Return to the starting position."
+                ],
+                "equipment_required": "Pec Deck Machine",
+                "target_muscles": [
+                    "Chest"
+                ]
+            },
+            {
+                "title": "Incline Cable Fly",
+                "photo": "https://example.com/photos/incline_cable_fly.jpg",
+                "description": "Works the upper chest using cables.",
+                "steps": [
+                    "Set the bench to a 45-degree incline.",
+                    "Grip the cables and bring them together in front of you.",
+                    "Return to the starting position with control."
+                ],
+                "equipment_required": "Cable Machine, Incline Bench",
+                "target_muscles": [
+                    "Upper Chest",
+                    "Shoulders"
+                ]
+            },
+            {
+                "title": "Machine Chest Press",
+                "photo": "https://example.com/photos/machine_chest_press.jpg",
+                "description": "A machine-based chest press for controlled movement.",
+                "steps": [
+                    "Sit on the machine with handles at chest level.",
+                    "Press the handles forward until your arms are fully extended.",
+                    "Slowly return to the starting position."
+                ],
+                "equipment_required": "Chest Press Machine",
+                "target_muscles": [
+                    "Chest",
+                    "Shoulders"
+                ]
+            }
+        ],
+        "back": [
+            {
+                "title": "Pull-Ups",
+                "photo": "https://example.com/photos/pull_ups.jpg",
+                "description": "A bodyweight exercise focusing on the upper back.",
+                "steps": [
+                    "Grab the pull-up bar with an overhand grip.",
+                    "Pull your body up until your chin is over the bar.",
+                    "Lower yourself back down with control."
+                ],
+                "equipment_required": "Pull-Up Bar",
+                "target_muscles": [
+                    "Lats",
+                    "Traps",
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Deadlift",
+                "photo": "https://example.com/photos/deadlift.jpg",
+                "description": "A compound movement that targets the entire back.",
+                "steps": [
+                    "Stand with feet hip-width apart and grip the barbell with hands just outside your knees.",
+                    "Lift the barbell by extending your hips and knees.",
+                    "Lower the bar back to the floor with control."
+                ],
+                "equipment_required": "Barbell",
+                "target_muscles": [
+                    "Lats",
+                    "Traps",
+                    "Lower Back",
+                    "Glutes"
+                ]
+            },
+            {
+                "title": "Bent-Over Row",
+                "photo": "https://example.com/photos/bent_over_row.jpg",
+                "description": "Targets the mid-back and lats.",
+                "steps": [
+                    "Hold a barbell or dumbbells with palms facing down.",
+                    "Hinge at the hips and lower your torso.",
+                    "Pull the weight towards your lower chest.",
+                    "Lower the weight back to the starting position."
+                ],
+                "equipment_required": "Barbell or Dumbbells",
+                "target_muscles": [
+                    "Lats",
+                    "Rhomboids",
+                    "Traps",
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Lat Pulldown",
+                "photo": "https://example.com/photos/lat_pulldown.jpg",
+                "description": "A cable machine exercise that isolates the lats.",
+                "steps": [
+                    "Sit on the lat pulldown machine and grip the bar with an overhand grip.",
+                    "Pull the bar down to your chest, squeezing your shoulder blades.",
+                    "Slowly return the bar to the starting position."
+                ],
+                "equipment_required": "Lat Pulldown Machine",
+                "target_muscles": [
+                    "Lats",
+                    "Biceps",
+                    "Traps"
+                ]
+            },
+            {
+                "title": "T-Bar Row",
+                "photo": "https://example.com/photos/t_bar_row.jpg",
+                "description": "A row variation that targets the mid-back.",
+                "steps": [
+                    "Stand over a barbell with a V-handle attachment.",
+                    "Hinge at the hips and pull the bar towards your chest.",
+                    "Lower the bar back down with control."
+                ],
+                "equipment_required": "T-Bar Row Machine or Barbell",
+                "target_muscles": [
+                    "Lats",
+                    "Traps",
+                    "Rhomboids",
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "One-Arm Dumbbell Row",
+                "photo": "https://example.com/photos/one_arm_dumbbell_row.jpg",
+                "description": "Isolates each side of the back.",
+                "steps": [
+                    "Place one hand on a bench and hold a dumbbell in the other.",
+                    "Pull the dumbbell towards your waist while keeping your back straight.",
+                    "Lower the dumbbell back down slowly."
+                ],
+                "equipment_required": "Dumbbell, Bench",
+                "target_muscles": [
+                    "Lats",
+                    "Rhomboids",
+                    "Traps",
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Seated Cable Row",
+                "photo": "https://example.com/photos/seated_cable_row.jpg",
+                "description": "Targets the mid-back and lats using cables.",
+                "steps": [
+                    "Sit at a cable row machine with feet on the platform.",
+                    "Pull the handle towards your torso while keeping your back straight.",
+                    "Extend your arms back to the starting position."
+                ],
+                "equipment_required": "Cable Machine",
+                "target_muscles": [
+                    "Lats",
+                    "Rhomboids",
+                    "Traps",
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Chest-Supported Row",
+                "photo": "https://example.com/photos/chest_supported_row.jpg",
+                "description": "Reduces strain on the lower back by supporting the chest.",
+                "steps": [
+                    "Lie face down on an incline bench while holding dumbbells.",
+                    "Pull the dumbbells towards your chest.",
+                    "Lower them back down with control."
+                ],
+                "equipment_required": "Dumbbells, Incline Bench",
+                "target_muscles": [
+                    "Lats",
+                    "Rhomboids",
+                    "Traps",
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Good Morning",
+                "photo": "https://example.com/photos/good_morning.jpg",
+                "description": "Strengthens the lower back, hamstrings, and glutes.",
+                "steps": [
+                    "Stand with a barbell across your shoulders.",
+                    "Hinge at the hips, lowering your torso forward while keeping your back straight.",
+                    "Return to the starting position by extending your hips."
+                ],
+                "equipment_required": "Barbell",
+                "target_muscles": [
+                    "Lower Back",
+                    "Hamstrings",
+                    "Glutes"
+                ]
+            },
+            {
+                "title": "Inverted Row",
+                "photo": "https://example.com/photos/inverted_row.jpg",
+                "description": "Bodyweight exercise for the mid-back and lats.",
+                "steps": [
+                    "Lie under a bar or Smith machine and grab the bar with an overhand grip.",
+                    "Pull your chest towards the bar while keeping your body straight.",
+                    "Lower yourself back down with control."
+                ],
+                "equipment_required": "Bar or Smith Machine",
+                "target_muscles": [
+                    "Lats",
+                    "Rhomboids",
+                    "Traps",
+                    "Biceps"
+                ]
+            }
+        ],
+        "biceps": [
+            {
+                "title": "Bicep Curl",
+                "photo": "https://example.com/photos/bicep_curl.jpg",
+                "description": "A fundamental exercise for arm development.",
+                "steps": [
+                    "Stand with feet shoulder-width apart holding dumbbells.",
+                    "Curl the weights towards your shoulders.",
+                    "Lower the weights slowly."
+                ],
+                "equipment_required": "Dumbbells",
+                "target_muscles": [
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Hammer Curl",
+                "photo": "https://example.com/photos/hammer_curl.jpg",
+                "description": "Targets both biceps and forearms.",
+                "steps": [
+                    "Hold dumbbells at your sides with palms facing inward.",
+                    "Lift the weights until your forearms are vertical.",
+                    "Lower them slowly back down."
+                ],
+                "equipment_required": "Dumbbells",
+                "target_muscles": [
+                    "Biceps",
+                    "Forearms"
+                ]
+            },
+            {
+                "title": "Preacher Curl",
+                "photo": "https://example.com/photos/preacher_curl.jpg",
+                "description": "Isolation exercise for the lower biceps.",
+                "steps": [
+                    "Sit on a preacher bench with arms extended on the pad.",
+                    "Curl the barbell or dumbbells towards you.",
+                    "Lower the weight back down with control."
+                ],
+                "equipment_required": "Barbell or Dumbbells, Preacher Bench",
+                "target_muscles": [
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Concentration Curl",
+                "photo": "https://example.com/photos/concentration_curl.jpg",
+                "description": "Isolates each bicep individually for maximum contraction.",
+                "steps": [
+                    "Sit on a bench with a dumbbell in one hand.",
+                    "Rest your elbow on the inside of your thigh.",
+                    "Curl the dumbbell towards your shoulder."
+                ],
+                "equipment_required": "Dumbbells",
+                "target_muscles": [
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "EZ Bar Curl",
+                "photo": "https://example.com/photos/ez_bar_curl.jpg",
+                "description": "Uses an EZ curl bar to target the biceps with a comfortable grip.",
+                "steps": [
+                    "Stand with feet shoulder-width apart.",
+                    "Grip the EZ bar with both hands.",
+                    "Curl the bar towards your shoulders, then lower it."
+                ],
+                "equipment_required": "EZ Curl Bar",
+                "target_muscles": [
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Cable Curl",
+                "photo": "https://example.com/photos/cable_curl.jpg",
+                "description": "Keeps constant tension on the biceps with a cable machine.",
+                "steps": [
+                    "Stand with a cable handle in each hand.",
+                    "Curl the cables towards your shoulders.",
+                    "Slowly lower the handles back down."
+                ],
+                "equipment_required": "Cable Machine",
+                "target_muscles": [
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Reverse Curl",
+                "photo": "https://example.com/photos/reverse_curl.jpg",
+                "description": "Targets the brachialis muscle under the biceps.",
+                "steps": [
+                    "Stand with a barbell or EZ curl bar.",
+                    "Grip the bar with palms facing down.",
+                    "Curl the bar towards your shoulders."
+                ],
+                "equipment_required": "Barbell or EZ Curl Bar",
+                "target_muscles": [
+                    "Biceps",
+                    "Forearms"
+                ]
+            },
+            {
+                "title": "Incline Dumbbell Curl",
+                "photo": "https://example.com/photos/incline_dumbbell_curl.jpg",
+                "description": "Targets the long head of the biceps.",
+                "steps": [
+                    "Sit on an incline bench with dumbbells in hand.",
+                    "Curl the weights towards your shoulders.",
+                    "Lower them slowly back down."
+                ],
+                "equipment_required": "Dumbbells, Incline Bench",
+                "target_muscles": [
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Zottman Curl",
+                "photo": "https://example.com/photos/zottman_curl.jpg",
+                "description": "Works both biceps and forearms with rotation.",
+                "steps": [
+                    "Start with a standard curl.",
+                    "At the top, rotate your palms downwards.",
+                    "Lower the weights with palms facing down."
+                ],
+                "equipment_required": "Dumbbells",
+                "target_muscles": [
+                    "Biceps",
+                    "Forearms"
+                ]
+            },
+            {
+                "title": "21s Curl",
+                "photo": "https://example.com/photos/21s_curl.jpg",
+                "description": "A three-phase bicep curl workout for intense pump.",
+                "steps": [
+                    "Perform 7 half reps from the bottom to halfway.",
+                    "Perform 7 half reps from halfway to the top.",
+                    "Perform 7 full reps from bottom to top."
+                ],
+                "equipment_required": "Barbell",
+                "target_muscles": [
+                    "Biceps"
+                ]
+            }
+        ],
+        "triceps": [
+            {
+                "title": "Triceps Dips",
+                "photo": "https://example.com/photos/triceps_dips.jpg",
+                "description": "A bodyweight exercise that targets the triceps.",
+                "steps": [
+                    "Sit on the edge of a bench with hands next to your hips.",
+                    "Slide off the bench, keeping your legs straight.",
+                    "Lower your body by bending your elbows.",
+                    "Push back up to the starting position."
+                ],
+                "equipment_required": "Bench",
+                "target_muscles": [
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Close-Grip Bench Press",
+                "photo": "https://example.com/photos/close_grip_bench_press.jpg",
+                "description": "A barbell exercise that focuses on the triceps.",
+                "steps": [
+                    "Lie flat on the bench with your hands close together on the bar.",
+                    "Lower the bar to your chest.",
+                    "Press the bar up, extending your arms fully."
+                ],
+                "equipment_required": "Barbell, Bench",
+                "target_muscles": [
+                    "Triceps",
+                    "Chest",
+                    "Shoulders"
+                ]
+            },
+            {
+                "title": "Overhead Triceps Extension",
+                "photo": "https://example.com/photos/overhead_triceps_extension.jpg",
+                "description": "Targets the long head of the triceps.",
+                "steps": [
+                    "Hold a dumbbell with both hands overhead.",
+                    "Bend your elbows to lower the dumbbell behind your head.",
+                    "Extend your arms to return to the starting position."
+                ],
+                "equipment_required": "Dumbbell",
+                "target_muscles": [
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Triceps Kickback",
+                "photo": "https://example.com/photos/triceps_kickback.jpg",
+                "description": "Isolates the triceps for full contraction.",
+                "steps": [
+                    "Hold a dumbbell in one hand and hinge at the hips.",
+                    "Keep your elbow close to your side.",
+                    "Extend your arm behind you.",
+                    "Return to the starting position."
+                ],
+                "equipment_required": "Dumbbells",
+                "target_muscles": [
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Skull Crushers",
+                "photo": "https://example.com/photos/skull_crushers.jpg",
+                "description": "Lying triceps extension targeting all three heads of the triceps.",
+                "steps": [
+                    "Lie on a flat bench holding an EZ curl bar.",
+                    "Lower the bar towards your forehead.",
+                    "Extend your arms back to the starting position."
+                ],
+                "equipment_required": "EZ Curl Bar, Bench",
+                "target_muscles": [
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Rope Triceps Pushdown",
+                "photo": "https://example.com/photos/rope_triceps_pushdown.jpg",
+                "description": "Cable machine exercise focusing on triceps.",
+                "steps": [
+                    "Stand in front of a cable machine with the rope attachment.",
+                    "Pull the rope down by extending your arms.",
+                    "Return to the starting position with control."
+                ],
+                "equipment_required": "Cable Machine",
+                "target_muscles": [
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Diamond Push-Ups",
+                "photo": "https://example.com/photos/diamond_pushups.jpg",
+                "description": "Bodyweight exercise for triceps using a narrow hand position.",
+                "steps": [
+                    "Start in a push-up position with hands close together, forming a diamond shape.",
+                    "Lower your body down while keeping your elbows close to your sides.",
+                    "Push yourself back up to the starting position."
+                ],
+                "equipment_required": "Bodyweight",
+                "target_muscles": [
+                    "Triceps",
+                    "Chest"
+                ]
+            },
+            {
+                "title": "Triceps Press Machine",
+                "photo": "https://example.com/photos/triceps_press_machine.jpg",
+                "description": "Machine exercise for controlled triceps work.",
+                "steps": [
+                    "Sit on the machine with handles at shoulder height.",
+                    "Press the handles down by extending your arms.",
+                    "Return to the starting position."
+                ],
+                "equipment_required": "Triceps Press Machine",
+                "target_muscles": [
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Dumbbell Floor Press",
+                "photo": "https://example.com/photos/dumbbell_floor_press.jpg",
+                "description": "Targets the triceps with minimal shoulder involvement.",
+                "steps": [
+                    "Lie on the floor with dumbbells in hand.",
+                    "Press the dumbbells up until your arms are fully extended.",
+                    "Lower them to the floor, stopping when your upper arms touch the ground."
+                ],
+                "equipment_required": "Dumbbells",
+                "target_muscles": [
+                    "Triceps",
+                    "Chest"
+                ]
+            },
+            {
+                "title": "Cable Overhead Triceps Extension",
+                "photo": "https://example.com/photos/cable_overhead_triceps_extension.jpg",
+                "description": "Uses cables to target the long head of the triceps.",
+                "steps": [
+                    "Stand with your back to the cable machine, gripping the rope attachment.",
+                    "Extend your arms overhead, pulling the rope up.",
+                    "Lower it back down with control."
+                ],
+                "equipment_required": "Cable Machine",
+                "target_muscles": [
+                    "Triceps"
+                ]
+            }
+        ],
+        "shoulders": [
+            {
+                "title": "Overhead Press",
+                "photo": "https://example.com/photos/overhead_press.jpg",
+                "description": "A compound movement that targets the entire shoulder.",
+                "steps": [
+                    "Stand with feet shoulder-width apart, holding a barbell at shoulder height.",
+                    "Press the bar overhead by extending your arms.",
+                    "Lower it back to the starting position."
+                ],
+                "equipment_required": "Barbell",
+                "target_muscles": [
+                    "Deltoids",
+                    "Triceps",
+                    "Traps"
+                ]
+            },
+            {
+                "title": "Dumbbell Shoulder Press",
+                "photo": "https://example.com/photos/dumbbell_shoulder_press.jpg",
+                "description": "A variation of the overhead press using dumbbells.",
+                "steps": [
+                    "Sit on a bench with dumbbells at shoulder height.",
+                    "Press the dumbbells overhead by extending your arms.",
+                    "Lower them back to the starting position."
+                ],
+                "equipment_required": "Dumbbells, Bench",
+                "target_muscles": [
+                    "Deltoids",
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Lateral Raise",
+                "photo": "https://example.com/photos/lateral_raise.jpg",
+                "description": "Isolates the lateral deltoids.",
+                "steps": [
+                    "Stand with a dumbbell in each hand.",
+                    "Raise your arms out to the sides until they reach shoulder height.",
+                    "Lower the dumbbells back down slowly."
+                ],
+                "equipment_required": "Dumbbells",
+                "target_muscles": [
+                    "Lateral Deltoids"
+                ]
+            },
+            {
+                "title": "Front Raise",
+                "photo": "https://example.com/photos/front_raise.jpg",
+                "description": "Targets the front delts.",
+                "steps": [
+                    "Stand with a dumbbell in each hand.",
+                    "Raise your arms in front of you until they reach shoulder height.",
+                    "Lower them back down slowly."
+                ],
+                "equipment_required": "Dumbbells",
+                "target_muscles": [
+                    "Front Deltoids"
+                ]
+            },
+            {
+                "title": "Arnold Press",
+                "photo": "https://example.com/photos/arnold_press.jpg",
+                "description": "A shoulder press variation named after Arnold Schwarzenegger.",
+                "steps": [
+                    "Sit on a bench with dumbbells held in front of your chest.",
+                    "Rotate your wrists as you press the dumbbells overhead.",
+                    "Lower them back to the starting position."
+                ],
+                "equipment_required": "Dumbbells, Bench",
+                "target_muscles": [
+                    "Deltoids",
+                    "Triceps"
+                ]
+            },
+            {
+                "title": "Face Pull",
+                "photo": "https://example.com/photos/face_pull.jpg",
+                "description": "A cable exercise that targets the rear delts and traps.",
+                "steps": [
+                    "Stand facing a cable machine with a rope attachment at eye level.",
+                    "Pull the rope towards your face while keeping your elbows high.",
+                    "Slowly return to the starting position."
+                ],
+                "equipment_required": "Cable Machine",
+                "target_muscles": [
+                    "Rear Deltoids",
+                    "Traps",
+                    "Rhomboids"
+                ]
+            },
+            {
+                "title": "Shrugs",
+                "photo": "https://example.com/photos/shrugs.jpg",
+                "description": "Strengthens the upper traps.",
+                "steps": [
+                    "Hold a dumbbell in each hand.",
+                    "Shrug your shoulders towards your ears.",
+                    "Lower your shoulders back down."
+                ],
+                "equipment_required": "Dumbbells",
+                "target_muscles": [
+                    "Traps"
+                ]
+            },
+            {
+                "title": "Push Press",
+                "photo": "https://example.com/photos/push_press.jpg",
+                "description": "A power move that combines a squat and overhead press.",
+                "steps": [
+                    "Hold a barbell at shoulder height.",
+                    "Dip your knees slightly and explosively press the bar overhead.",
+                    "Lower it back to the starting position."
+                ],
+                "equipment_required": "Barbell",
+                "target_muscles": [
+                    "Deltoids",
+                    "Triceps",
+                    "Traps",
+                    "Legs"
+                ]
+            },
+            {
+                "title": "Reverse Fly",
+                "photo": "https://example.com/photos/reverse_fly.jpg",
+                "description": "Targets the rear delts and upper back.",
+                "steps": [
+                    "Sit on a bench holding dumbbells in each hand.",
+                    "With a slight bend in your elbows, raise your arms out to the sides.",
+                    "Lower the dumbbells back down slowly."
+                ],
+                "equipment_required": "Dumbbells, Bench",
+                "target_muscles": [
+                    "Rear Deltoids",
+                    "Rhomboids",
+                    "Traps"
+                ]
+            },
+            {
+                "title": "Cable Lateral Raise",
+                "photo": "https://example.com/photos/cable_lateral_raise.jpg",
+                "description": "Isolates the lateral delts with constant tension from the cable.",
+                "steps": [
+                    "Stand next to a cable machine with the handle set to the lowest position.",
+                    "Raise your arm out to the side until it reaches shoulder height.",
+                    "Lower your arm back down with control."
+                ],
+                "equipment_required": "Cable Machine",
+                "target_muscles": [
+                    "Lateral Deltoids"
+                ]
+            }
+        ],
+        "abs": [
+            {
+                "title": "Plank",
+                "photo": "https://example.com/photos/plank.jpg",
+                "description": "A core-strengthening exercise that works the abs and lower back.",
+                "steps": [
+                    "Start in a forearm plank position with your body straight.",
+                    "Hold the position for as long as possible while keeping your core tight."
+                ],
+                "equipment_required": "None",
+                "target_muscles": [
+                    "Abs",
+                    "Lower Back",
+                    "Obliques"
+                ]
+            },
+            {
+                "title": "Crunch",
+                "photo": "https://example.com/photos/crunch.jpg",
+                "description": "A basic abdominal exercise targeting the upper abs.",
+                "steps": [
+                    "Lie on your back with knees bent and hands behind your head.",
+                    "Lift your upper back off the ground, contracting your abs.",
+                    "Lower back down with control."
+                ],
+                "equipment_required": "None",
+                "target_muscles": [
+                    "Upper Abs"
+                ]
+            },
+            {
+                "title": "Bicycle Crunch",
+                "photo": "https://example.com/photos/bicycle_crunch.jpg",
+                "description": "Targets the abs and obliques by incorporating a twisting motion.",
+                "steps": [
+                    "Lie on your back with hands behind your head and legs lifted.",
+                    "Bring one knee towards your chest while twisting your torso to touch it with the opposite elbow.",
+                    "Alternate sides in a pedaling motion."
+                ],
+                "equipment_required": "None",
+                "target_muscles": [
+                    "Abs",
+                    "Obliques"
+                ]
+            },
+            {
+                "title": "Leg Raise",
+                "photo": "https://example.com/photos/leg_raise.jpg",
+                "description": "Targets the lower abs by raising the legs.",
+                "steps": [
+                    "Lie on your back with your hands under your hips.",
+                    "Lift your legs towards the ceiling while keeping them straight.",
+                    "Lower your legs back down without letting them touch the ground."
+                ],
+                "equipment_required": "None",
+                "target_muscles": [
+                    "Lower Abs"
+                ]
+            },
+            {
+                "title": "Russian Twist",
+                "photo": "https://example.com/photos/russian_twist.jpg",
+                "description": "A rotational exercise targeting the obliques and core.",
+                "steps": [
+                    "Sit on the ground with your legs bent and lean back slightly.",
+                    "Hold a weight or medicine ball and twist your torso from side to side.",
+                    "Keep your core engaged throughout the movement."
+                ],
+                "equipment_required": "Medicine Ball or Dumbbell",
+                "target_muscles": [
+                    "Obliques",
+                    "Abs"
+                ]
+            },
+            {
+                "title": "Mountain Climbers",
+                "photo": "https://example.com/photos/mountain_climbers.jpg",
+                "description": "A dynamic movement that works the abs and elevates heart rate.",
+                "steps": [
+                    "Start in a high plank position.",
+                    "Drive one knee towards your chest, then quickly switch legs in a running motion.",
+                    "Continue alternating legs while keeping your core tight."
+                ],
+                "equipment_required": "None",
+                "target_muscles": [
+                    "Abs",
+                    "Obliques",
+                    "Hip Flexors"
+                ]
+            },
+            {
+                "title": "Hanging Leg Raise",
+                "photo": "https://example.com/photos/hanging_leg_raise.jpg",
+                "description": "A challenging exercise targeting the lower abs.",
+                "steps": [
+                    "Hang from a pull-up bar with your legs straight.",
+                    "Raise your legs up towards your chest, keeping them straight.",
+                    "Lower them back down with control."
+                ],
+                "equipment_required": "Pull-Up Bar",
+                "target_muscles": [
+                    "Lower Abs",
+                    "Hip Flexors"
+                ]
+            },
+            {
+                "title": "Ab Wheel Rollout",
+                "photo": "https://example.com/photos/ab_wheel_rollout.jpg",
+                "description": "An advanced core exercise using an ab wheel.",
+                "steps": [
+                    "Kneel on the ground and hold the ab wheel in front of you.",
+                    "Roll the wheel forward, extending your body.",
+                    "Pull the wheel back towards your knees to return to the starting position."
+                ],
+                "equipment_required": "Ab Wheel",
+                "target_muscles": [
+                    "Abs",
+                    "Lower Back"
+                ]
+            },
+            {
+                "title": "Toe Touches",
+                "photo": "https://example.com/photos/toe_touches.jpg",
+                "description": "Isolates the upper abs by reaching towards your toes.",
+                "steps": [
+                    "Lie on your back with legs extended upwards.",
+                    "Reach your hands towards your toes, lifting your upper back off the ground.",
+                    "Lower back down with control."
+                ],
+                "equipment_required": "None",
+                "target_muscles": [
+                    "Upper Abs"
+                ]
+            },
+            {
+                "title": "Side Plank",
+                "photo": "https://example.com/photos/side_plank.jpg",
+                "description": "A variation of the plank that targets the obliques.",
+                "steps": [
+                    "Lie on your side and lift your body off the ground, supporting yourself on one forearm.",
+                    "Hold the position for as long as possible while keeping your body straight.",
+                    "Switch sides to work both obliques."
+                ],
+                "equipment_required": "None",
+                "target_muscles": [
+                    "Obliques",
+                    "Abs"
+                ]
+            }
+        ],
+        "legs": [
+            {
+                "title": "Squats",
+                "photo": "https://example.com/photos/squats.jpg",
+                "description": "A fundamental leg exercise working the quads, glutes, and hamstrings.",
+                "steps": [
+                    "Stand with feet shoulder-width apart.",
+                    "Lower your body by bending at the knees and hips.",
+                    "Push through your heels to stand back up."
+                ],
+                "equipment_required": "Barbell (optional)",
+                "target_muscles": [
+                    "Quadriceps",
+                    "Glutes",
+                    "Hamstrings"
+                ]
+            },
+            {
+                "title": "Lunges",
+                "photo": "https://example.com/photos/lunges.jpg",
+                "description": "A unilateral exercise focusing on the quads and glutes.",
+                "steps": [
+                    "Step forward with one leg and lower your hips until both knees are bent at 90 degrees.",
+                    "Push through the front heel to return to the starting position.",
+                    "Repeat on the other leg."
+                ],
+                "equipment_required": "Dumbbells (optional)",
+                "target_muscles": [
+                    "Quadriceps",
+                    "Glutes"
+                ]
+            },
+            {
+                "title": "Leg Press",
+                "photo": "https://example.com/photos/leg_press.jpg",
+                "description": "Machine-based leg exercise for targeting quads and glutes.",
+                "steps": [
+                    "Sit on the leg press machine with feet shoulder-width apart on the platform.",
+                    "Press the platform up until your legs are fully extended.",
+                    "Lower it back down with control."
+                ],
+                "equipment_required": "Leg Press Machine",
+                "target_muscles": [
+                    "Quadriceps",
+                    "Glutes",
+                    "Hamstrings"
+                ]
+            },
+            {
+                "title": "Romanian Deadlift",
+                "photo": "https://example.com/photos/romanian_deadlift.jpg",
+                "description": "Targets the hamstrings and glutes.",
+                "steps": [
+                    "Hold a barbell or dumbbells in front of your thighs.",
+                    "Hinge at the hips to lower the weight while keeping your back flat.",
+                    "Push through your heels to stand back up."
+                ],
+                "equipment_required": "Barbell or Dumbbells",
+                "target_muscles": [
+                    "Hamstrings",
+                    "Glutes"
+                ]
+            },
+            {
+                "title": "Bulgarian Split Squat",
+                "photo": "https://example.com/photos/bulgarian_split_squat.jpg",
+                "description": "Unilateral exercise targeting the quads and glutes.",
+                "steps": [
+                    "Place one foot behind you on a bench.",
+                    "Lower your body by bending your front knee.",
+                    "Push through your front heel to return to the starting position."
+                ],
+                "equipment_required": "Dumbbells (optional), Bench",
+                "target_muscles": [
+                    "Quadriceps",
+                    "Glutes"
+                ]
+            },
+            {
+                "title": "Leg Curl",
+                "photo": "https://example.com/photos/leg_curl.jpg",
+                "description": "Isolates the hamstrings.",
+                "steps": [
+                    "Lie face down on the leg curl machine.",
+                    "Curl the pad towards your glutes by bending your knees.",
+                    "Lower the pad back down with control."
+                ],
+                "equipment_required": "Leg Curl Machine",
+                "target_muscles": [
+                    "Hamstrings"
+                ]
+            },
+            {
+                "title": "Leg Extension",
+                "photo": "https://example.com/photos/leg_extension.jpg",
+                "description": "Targets the quadriceps in isolation.",
+                "steps": [
+                    "Sit on the leg extension machine with your feet under the pad.",
+                    "Extend your legs fully by lifting the pad.",
+                    "Lower it back down slowly."
+                ],
+                "equipment_required": "Leg Extension Machine",
+                "target_muscles": [
+                    "Quadriceps"
+                ]
+            },
+            {
+                "title": "Calf Raises",
+                "photo": "https://example.com/photos/calf_raises.jpg",
+                "description": "Strengthens the calves.",
+                "steps": [
+                    "Stand with your feet hip-width apart.",
+                    "Raise your heels as high as possible.",
+                    "Lower your heels back down."
+                ],
+                "equipment_required": "Bodyweight or Dumbbells",
+                "target_muscles": [
+                    "Calves"
+                ]
+            },
+            {
+                "title": "Sumo Deadlift",
+                "photo": "https://example.com/photos/sumo_deadlift.jpg",
+                "description": "Targets the glutes, hamstrings, and quads with a wide stance.",
+                "steps": [
+                    "Stand with feet wide and toes pointing out.",
+                    "Grip the bar inside your knees.",
+                    "Lift the bar by extending your hips and knees."
+                ],
+                "equipment_required": "Barbell",
+                "target_muscles": [
+                    "Glutes",
+                    "Hamstrings",
+                    "Quadriceps"
+                ]
+            },
+            {
+                "title": "Step-Ups",
+                "photo": "https://example.com/photos/step_ups.jpg",
+                "description": "A unilateral exercise for quads and glutes.",
+                "steps": [
+                    "Step onto a bench or platform with one foot.",
+                    "Push through your front heel to stand up fully.",
+                    "Lower yourself back down and repeat with the other leg."
+                ],
+                "equipment_required": "Dumbbells (optional), Bench",
+                "target_muscles": [
+                    "Quadriceps",
+                    "Glutes"
+                ]
+            }
+        ],
+        "helper_muscles": [
+            {
+                "title": "Forearm Curls",
+                "photo": "https://example.com/photos/forearm_curls.jpg",
+                "description": "Strengthens the forearm muscles and improves grip.",
+                "steps": [
+                    "Hold a barbell or dumbbells with an underhand grip.",
+                    "Curl your wrists upwards towards your forearms.",
+                    "Lower the weight back down with control."
+                ],
+                "equipment_required": "Barbell or Dumbbells",
+                "target_muscles": [
+                    "Forearms"
+                ]
+            },
+            {
+                "title": "Farmer's Walk",
+                "photo": "https://example.com/photos/farmers_walk.jpg",
+                "description": "Improves grip strength and works the forearms, shoulders, and core.",
+                "steps": [
+                    "Hold a heavy dumbbell in each hand.",
+                    "Walk forward while maintaining a tight grip and straight posture."
+                ],
+                "equipment_required": "Dumbbells or Kettlebells",
+                "target_muscles": [
+                    "Forearms",
+                    "Grip Strength",
+                    "Core"
+                ]
+            },
+            {
+                "title": "Calf Raises",
+                "photo": "https://example.com/photos/calf_raises.jpg",
+                "description": "Strengthens the calf muscles.",
+                "steps": [
+                    "Stand on the edge of a platform with your heels hanging off.",
+                    "Raise your heels as high as possible.",
+                    "Lower your heels back down with control."
+                ],
+                "equipment_required": "None",
+                "target_muscles": [
+                    "Calves"
+                ]
+            },
+            {
+                "title": "Towel Pull-Ups",
+                "photo": "https://example.com/photos/towel_pullups.jpg",
+                "description": "A variation of pull-ups that targets grip strength and forearms.",
+                "steps": [
+                    "Drape a towel over a pull-up bar and grip each end.",
+                    "Perform a pull-up while maintaining a strong grip on the towel."
+                ],
+                "equipment_required": "Towel, Pull-Up Bar",
+                "target_muscles": [
+                    "Forearms",
+                    "Grip Strength",
+                    "Biceps"
+                ]
+            },
+            {
+                "title": "Standing Calf Raise Machine",
+                "photo": "https://example.com/photos/calf_raise_machine.jpg",
+                "description": "Strengthens the calf muscles using a machine.",
+                "steps": [
+                    "Position yourself under the pads of a standing calf raise machine.",
+                    "Raise your heels as high as possible, then lower them back down."
+                ],
+                "equipment_required": "Standing Calf Raise Machine",
+                "target_muscles": [
+                    "Calves"
+                ]
+            },
+            {
+                "title": "Reverse Wrist Curls",
+                "photo": "https://example.com/photos/reverse_wrist_curls.jpg",
+                "description": "Targets the forearm extensors.",
+                "steps": [
+                    "Hold a barbell with an overhand grip.",
+                    "Curl your wrists upwards towards your forearms.",
+                    "Lower the barbell back down with control."
+                ],
+                "equipment_required": "Barbell",
+                "target_muscles": [
+                    "Forearms"
+                ]
+            },
+            {
+                "title": "Seated Calf Raise",
+                "photo": "https://example.com/photos/seated_calf_raise.jpg",
+                "description": "Isolates the calf muscles while seated.",
+                "steps": [
+                    "Sit at a seated calf raise machine with the pads resting on your thighs.",
+                    "Raise your heels as high as possible.",
+                    "Lower your heels back down with control."
+                ],
+                "equipment_required": "Seated Calf Raise Machine",
+                "target_muscles": [
+                    "Calves"
+                ]
+            },
+            {
+                "title": "Plate Pinch",
+                "photo": "https://example.com/photos/plate_pinch.jpg",
+                "description": "Improves grip strength by pinching weight plates.",
+                "steps": [
+                    "Hold two weight plates together between your fingers and thumb.",
+                    "Hold them for as long as possible before releasing."
+                ],
+                "equipment_required": "Weight Plates",
+                "target_muscles": [
+                    "Grip Strength",
+                    "Forearms"
+                ]
+            },
+            {
+                "title": "Smith Machine Calf Raise",
+                "photo": "https://example.com/photos/smith_machine_calf_raise.jpg",
+                "description": "Targets the calf muscles using a Smith machine.",
+                "steps": [
+                    "Position yourself under the bar of the Smith machine with the balls of your feet on a platform.",
+                    "Raise your heels as high as possible, then lower them back down."
+                ],
+                "equipment_required": "Smith Machine",
+                "target_muscles": [
+                    "Calves"
+                ]
+            },
+            {
+                "title": "Tennis Ball Squeeze",
+                "photo": "https://example.com/photos/tennis_ball_squeeze.jpg",
+                "description": "Improves grip strength by squeezing a tennis ball.",
+                "steps": [
+                    "Hold a tennis ball in one hand.",
+                    "Squeeze the ball as hard as possible, then release.",
+                    "Repeat for reps or time."
+                ],
+                "equipment_required": "Tennis Ball",
+                "target_muscles": [
+                    "Grip Strength",
+                    "Forearms"
+                ]
+            }
+        ]
+    }
+}

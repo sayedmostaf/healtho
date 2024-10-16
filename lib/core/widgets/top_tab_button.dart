@@ -16,6 +16,7 @@ class TopTabButton extends StatelessWidget {
       onTap: onPressed,
       child: Container(
         height: 40,
+        width: MediaQuery.of(context).size.width / 2,
         padding: const EdgeInsets.symmetric(horizontal: 20),
         decoration: BoxDecoration(
           border: Border(

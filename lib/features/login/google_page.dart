@@ -27,172 +27,174 @@ class _GooglePageState extends State<GooglePage> {
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Form(
             key: signupFormKey,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Spacer(),
-                Text(
-                  'Name',
-                  style: TextStyle(
-                    color: AppColors.primaryText,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600,
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(
+                    height: 20,
                   ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                RoundTextField(
-                  controller: nameController,
-                  hintText: 'Shahd',
-                  keyboardType: TextInputType.number,
-                ),
-                const SizedBox(
-                  height: 40,
-                ),
-
-                Text(
-                  'E-mail',
-                  style: TextStyle(
-                    color: AppColors.primaryText,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600,
+                  Text(
+                    'Name',
+                    style: TextStyle(
+                      color: AppColors.primaryText,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                RoundTextField(
-                  controller: signupEmailController,
-                  hintText: 'shahd@gmail.com',
-                  keyboardType: TextInputType.number,
-                ),
-                const SizedBox(
-                  height: 40,
-                ),
-
-                Text(
-                  'Password',
-                  style: TextStyle(
-                    color: AppColors.primaryText,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w600,
+                  const SizedBox(
+                    height: 20,
                   ),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                RoundTextField(
-                  controller: signupPasswordController,
-                  hintText: '12345677',
-                  keyboardType: TextInputType.number,
-                ),
-                const SizedBox(
-                  height: 40,
-                ),
-
-                RoundButton(
-                  title: 'Sign Up',
-                  onPressed: ()async{
-                    if (signupFormKey.currentState!.validate()) {
-                      try {
-                        UserCredential userCredential = await FirebaseAuth.instance
-                            .createUserWithEmailAndPassword(
-                          email: signupEmailController.text,
-                          password: signupPasswordController.text,
-                        );
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            backgroundColor: Colors.green,
-                            content: Padding(
-                              padding: EdgeInsets.symmetric(vertical: 15.0),
-                              child: Text('Welcome to Healtho',
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.white,
-                                  )),
+                  RoundTextField(
+                    controller: nameController,
+                    hintText: 'Enter your name',
+                    keyboardType: TextInputType.name,
+                  ),
+                  const SizedBox(
+                    height: 40,
+                  ),
+                  Text(
+                    'E-mail',
+                    style: TextStyle(
+                      color: AppColors.primaryText,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  RoundTextField(
+                    controller: signupEmailController,
+                    hintText: 'Enter your email',
+                    keyboardType: TextInputType.emailAddress,
+                  ),
+                  const SizedBox(
+                    height: 40,
+                  ),
+                  Text(
+                    'Password',
+                    style: TextStyle(
+                      color: AppColors.primaryText,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  RoundTextField(
+                    controller: signupPasswordController,
+                    hintText: 'Enter your password',
+                    keyboardType: TextInputType.visiblePassword,
+                  ),
+                  const SizedBox(
+                    height: 40,
+                  ),
+                  RoundButton(
+                    title: 'Sign Up',
+                    onPressed: () async {
+                      if (signupFormKey.currentState!.validate()) {
+                        try {
+                          UserCredential userCredential = await FirebaseAuth
+                              .instance
+                              .createUserWithEmailAndPassword(
+                            email: signupEmailController.text,
+                            password: signupPasswordController.text,
+                          );
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              backgroundColor: Colors.green,
+                              content: Padding(
+                                padding: EdgeInsets.symmetric(vertical: 15.0),
+                                child: Text('Welcome to Healtho',
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    )),
+                              ),
                             ),
-                          ),
-                        );
-                        Future.delayed(const Duration(seconds: 3), () {
-                          context.push(const PhysiquePage());
-                        });
-                      } on FirebaseAuthException catch (e) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            backgroundColor: Colors.red,
-                            content: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 15.0),
-                              child: Text(e.message.toString(),
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.white,
-                                  )),
+                          );
+                          context.push(PhysiquePage(
+                            name: nameController.text,
+                            email: signupEmailController.text,
+                          ));
+                        } on FirebaseAuthException catch (e) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              backgroundColor: Colors.red,
+                              content: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 15.0),
+                                child: Text(e.message.toString(),
+                                    style: const TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    )),
+                              ),
                             ),
-                          ),
-                        );
-                        print(e.toString());
-                      } on Exception catch (e) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            backgroundColor: Colors.red,
-                            content: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 15.0),
-                              child: Text(e.toString(),
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.white,
-                                  )),
+                          );
+                          print(e.toString());
+                        } on Exception catch (e) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              backgroundColor: Colors.red,
+                              content: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 15.0),
+                                child: Text(e.toString(),
+                                    style: const TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    )),
+                              ),
                             ),
-                          ),
-                        );
-                        print(e.toString());
-                      } catch (e) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            backgroundColor: Colors.red,
-                            content: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 15.0),
-                              child: Text(e.toString(),
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.white,
-                                  )),
+                          );
+                        } catch (e) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              backgroundColor: Colors.red,
+                              content: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 15.0),
+                                child: Text(e.toString(),
+                                    style: const TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    )),
+                              ),
                             ),
-                          ),
-                        );
-                        print(e.toString());
+                          );
+                          print(e.toString());
+                        }
                       }
-                    }
-
-                  },
-                  isPadding: false,
-                ),
-
-                Center(
-                  child: GestureDetector(
-                    onTap: () {
-                      context.push(const SigninPage());
                     },
-                    child: Text(
-                      'Already have an account?! Sign in',
-                      style: TextStyle(
-                        color: AppColors.primaryText,
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600,
+                    isPadding: false,
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Center(
+                    child: GestureDetector(
+                      onTap: () {
+                        context.push(const SigninPage());
+                      },
+                      child: Text(
+                        'Already have an account?! Sign in',
+                        style: TextStyle(
+                          color: AppColors.primaryText,
+                          fontSize: 13,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
                     ),
                   ),
-                ),
-
-                const Spacer(
-                  flex: 2,
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
