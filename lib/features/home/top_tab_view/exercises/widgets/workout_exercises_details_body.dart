@@ -29,7 +29,7 @@ class WorkoutExercisesDetailsBody extends StatelessWidget {
                     imagesData[index],
                     width: MediaQuery.of(context).size.width * 0.7,
                     height: MediaQuery.of(context).size.width * 0.4,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 );
               },
@@ -72,7 +72,7 @@ class WorkoutExercisesDetailsBody extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  exerciseModel.equipmentRequired!,
+                  exerciseModel.equipmentRequired,
                   style: const TextStyle(
                     color: Colors.black,
                     fontSize: 13,
@@ -89,7 +89,7 @@ class WorkoutExercisesDetailsBody extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  exerciseModel.targetMuscles!.join(", "),
+                  exerciseModel.targetMuscles.join(", "),
                   style: const TextStyle(
                     color: Colors.black,
                     fontSize: 13,

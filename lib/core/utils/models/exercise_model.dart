@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 class ExerciseModel {
   final String title;

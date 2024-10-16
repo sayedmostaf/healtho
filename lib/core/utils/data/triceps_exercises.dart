@@ -1,4 +1,3 @@
-import 'package:healtho/core/utils/models/exercise_model.dart';
 
 class TricepsExercises {
   static List<Map<String, dynamic>> getExercises() {

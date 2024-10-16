@@ -6,11 +6,11 @@ import 'package:healtho/core/utils/models/exercise_model.dart';
 class ExercisesRow extends StatelessWidget {
   const ExercisesRow({
     super.key,
-    required this.exercise, // Keep this as ExerciseModel
+    required this.exercise,
     required this.onPressed,
   });
 
-  final ExerciseModel exercise; // Use ExerciseModel type
+  final ExerciseModel exercise;
   final VoidCallback onPressed;
 
   @override
@@ -34,10 +34,10 @@ class ExercisesRow extends StatelessWidget {
               child: AspectRatio(
                 aspectRatio: 2,
                 child: Image.asset(
-                  exercise.photo, // Access the photo property directly
+                  exercise.photo,
                   width: double.maxFinite,
                   height: double.maxFinite,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
               ),
             ),
@@ -57,7 +57,7 @@ class ExercisesRow extends StatelessWidget {
                   ),
                   alignment: Alignment.center,
                   child: Text(
-                    exercise.title, // Access the title property directly
+                    exercise.title,
                     maxLines: 1,
                     style: TextStyle(
                       color: AppColors.buttonPrimaryText,

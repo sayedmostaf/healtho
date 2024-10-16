@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:healtho/core/utils/assets.dart';
-import 'package:healtho/core/utils/colors.dart';
 import 'package:healtho/features/home/profile/widgets/setting_row.dart';
 
 class ProfileBody extends StatelessWidget {
