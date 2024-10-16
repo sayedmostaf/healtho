@@ -12,7 +12,7 @@ class ShoulderExercises {
         ],
         'equipmentRequired': "Barbell",
         'targetMuscles': ["Deltoids", "Triceps", "Traps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/shoulder_OverheadPress 1.jpg", "assets/images/shoulder_OverheadPress 2.jpg"],
       },
       {
         'title': "Dumbbell Shoulder Press",
@@ -25,7 +25,7 @@ class ShoulderExercises {
         ],
         'equipmentRequired': "Dumbbells, Bench",
         'targetMuscles': ["Deltoids", "Triceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/shoulder_CableLateralRaise 1.jpg", "assets/images/shoulder_CableLateralRaise 2.jpg"],
       },
       {
         'title': "Lateral Raise",
@@ -38,7 +38,7 @@ class ShoulderExercises {
         ],
         'equipmentRequired': "Dumbbells",
         'targetMuscles': ["Lateral Deltoids"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/shoulder_LateralRaise 1.jpg", "assets/images/shoulder_LateralRaise 2.jpg"],
       },
       {
         'title': "Front Raise",
@@ -51,7 +51,7 @@ class ShoulderExercises {
         ],
         'equipmentRequired': "Dumbbells",
         'targetMuscles': ["Front Deltoids"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/shoulder_FrontRaise 1.jpg", "assets/images/shoulder_FrontRaise 2.jpg"],
       },
       {
         'title': "Face Pull",
@@ -65,7 +65,7 @@ class ShoulderExercises {
         ],
         'equipmentRequired': "Cable Machine",
         'targetMuscles': ["Rear Deltoids", "Traps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/shoulder_FacePull 1.jpg", "assets/images/shoulder_FacePull 2.jpg"],
       },
     ];
   }

@@ -15,7 +15,7 @@ class LegsExercises {
         ],
         'equipmentRequired': "Barbell (optional)",
         'targetMuscles': ["Quadriceps", "Glutes", "Hamstrings"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/legs_Squats 1.jpg", "assets/images/legs_Squats 2.jpg"],
       },
       {
         'title': "Lunges",
@@ -29,7 +29,7 @@ class LegsExercises {
         ],
         'equipmentRequired': "Dumbbells (optional)",
         'targetMuscles': ["Quadriceps", "Glutes"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/legs_Lunges 1.jpg", "assets/images/legs_Lunges 2.jpg"],
       },
       {
         'title': "Leg Curl",
@@ -42,7 +42,7 @@ class LegsExercises {
         ],
         'equipmentRequired': "Leg Curl Machine",
         'targetMuscles': ["Hamstrings"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/legs_LegCurl 1.jpg", "assets/images/legs_LegCurl 2.jpg"],
       },
       {
         'title': "Leg Extension",
@@ -55,7 +55,7 @@ class LegsExercises {
         ],
         'equipmentRequired': "Leg Extension Machine",
         'targetMuscles': ["Quadriceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/legs_Extension 1.jpg", "assets/images/legs_Extension 2.jpg"],
       },
       {
         'title': "Calf Raises",
@@ -68,7 +68,7 @@ class LegsExercises {
         ],
         'equipmentRequired': "Bodyweight or Dumbbells",
         'targetMuscles': ["Calves"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/legs_CalfRaises 1.jpg", "assets/images/legs_CalfRaises 2.jpg"],
       },
     ];
   }

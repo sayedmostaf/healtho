@@ -12,7 +12,7 @@ class BicepsExercises {
         ],
         'equipmentRequired': "Dumbbells",
         'targetMuscles': ["Biceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/biceps_Curl 1.jpg", "assets/images/biceps_Curl 2.jpg"],
       },
       {
         'title': "Hammer Curl",
@@ -25,7 +25,7 @@ class BicepsExercises {
         ],
         'equipmentRequired': "Dumbbells",
         'targetMuscles': ["Biceps", "Forearms"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/biceps_HammerCurl 1.jpg", "assets/images/biceps_HammerCurl 2.jpg"],
       },
       {
         'title': "Preacher Curl",
@@ -38,7 +38,7 @@ class BicepsExercises {
         ],
         'equipmentRequired': "Barbell or Dumbbells, Preacher Bench",
         'targetMuscles': ["Biceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/biceps_PreacherCurl 1.jpg", "assets/images/biceps_PreacherCurl 2.jpg"],
       },
       {
         'title': "Concentration Curl",
@@ -52,7 +52,7 @@ class BicepsExercises {
         ],
         'equipmentRequired': "Dumbbells",
         'targetMuscles': ["Biceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/biceps_ConcentrationCurl 1.jpg", "assets/images/biceps_ConcentrationCurl 2.jpg"],
       },
       {
         'title': "EZ Bar Curl",
@@ -66,7 +66,7 @@ class BicepsExercises {
         ],
         'equipmentRequired': "EZ Curl Bar",
         'targetMuscles': ["Biceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/biceps_EZBarCurl 1.jpg", "assets/images/biceps_EZBarCurl 2.jpg"],
       },
     ];
   }

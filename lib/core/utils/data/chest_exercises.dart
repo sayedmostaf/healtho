@@ -31,7 +31,7 @@ class ChestExercises {
         ],
         'equipmentRequired': "Dumbbells, Incline Bench",
         'targetMuscles': ["Upper Chest", "Shoulders"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/chest_InclineDumbbellPress 1.jpg", "assets/images/chest_InclineDumbbellPress 2.jpg"],
       },
       {
         'title': "Chest Fly",
@@ -44,7 +44,7 @@ class ChestExercises {
         ],
         'equipmentRequired': "Dumbbells, Bench",
         'targetMuscles': ["Chest"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/chest_ChestFly 1.jpg", "assets/images/chest_ChestFly 2.jpg"],
       },
       {
         'title': "Push-Ups",
@@ -57,7 +57,7 @@ class ChestExercises {
         ],
         'equipmentRequired': "Bodyweight",
         'targetMuscles': ["Chest", "Triceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/chest_PushUps 1.jpg", "assets/images/chest_PushUps 2.jpg"],
       },
       {
         'title': "Decline Bench Press",
@@ -70,7 +70,7 @@ class ChestExercises {
         ],
         'equipmentRequired': "Barbell, Decline Bench",
         'targetMuscles': ["Lower Chest", "Triceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/chest_DeclineBenchPress 1.jpg", "assets/images/chest_DeclineBenchPress 2.jpg"],
       }
     ];
   }

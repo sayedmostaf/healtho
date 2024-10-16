@@ -14,7 +14,7 @@ class BackExercises {
         ],
         'equipmentRequired': "Pull-Up Bar",
         'targetMuscles': ["Lats", "Traps", "Biceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/back_PullUps 1.jpg", "assets/images/back_PullUps 2.jpg"],
       },
       {
         'title': "Deadlift",
@@ -27,7 +27,7 @@ class BackExercises {
         ],
         'equipmentRequired': "Barbell",
         'targetMuscles': ["Lats", "Traps", "Lower Back", "Glutes"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/back_DeadLift 1.jpg", "assets/images/back_DeadLift 2.jpg"],
       },
       {
         'title': "Bent-Over Row",
@@ -41,7 +41,7 @@ class BackExercises {
         ],
         'equipmentRequired': "Barbell or Dumbbells",
         'targetMuscles': ["Lats", "Rhomboids", "Traps", "Biceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/back_BentOverRow 1.jpg", "assets/images/back_BentOverRow 2.jpg"],
       },
       {
         'title': "Lat Pulldown",
@@ -54,7 +54,7 @@ class BackExercises {
         ],
         'equipmentRequired': "Lat Pulldown Machine",
         'targetMuscles': ["Lats", "Biceps", "Traps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/back_LatPulldown 1.jpg", "assets/images/back_LatPulldown 2.jpg"],
       },
       {
         'title': "T-Bar Row",
@@ -67,7 +67,7 @@ class BackExercises {
         ],
         'equipmentRequired': "T-Bar Row Machine or Barbell",
         'targetMuscles': ["Lats", "Traps", "Rhomboids", "Biceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/back_TBarRow 1.jpg", "assets/images/back_TBarRow 2.jpg"],
       },
     ];
   }

@@ -12,7 +12,7 @@ class AbsExercises {
         ],
         'equipmentRequired': "None",
         'targetMuscles': ["Abs", "Lower Back", "Obliques"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/abs_Plank 1.jpg", "assets/images/abs_Plank 2.jpg"],
       },
       {
         'title': "Bicycle Crunch",
@@ -26,7 +26,7 @@ class AbsExercises {
         ],
         'equipmentRequired': "None",
         'targetMuscles': ["Abs", "Obliques"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/abs_BicycleCrunch 1.jpg", "assets/images/abs_BicycleCrunch 2.jpg"],
       },
       {
         'title': "Leg Raise",
@@ -39,7 +39,7 @@ class AbsExercises {
         ],
         'equipmentRequired': "None",
         'targetMuscles': ["Lower Abs"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/abs_LegRaise 1.jpg", "assets/images/abs_LegRaise 2.jpg"],
       },
       {
         'title': "Russian Twist",
@@ -52,7 +52,7 @@ class AbsExercises {
         ],
         'equipmentRequired': "Medicine Ball or Dumbbell",
         'targetMuscles': ["Obliques", "Abs"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/abs_RussianTwist 1.jpg", "assets/images/abs_RussianTwist 2.jpg"],
       },
       {
         'title': "Mountain Climbers",
@@ -66,7 +66,7 @@ class AbsExercises {
         ],
         'equipmentRequired': "None",
         'targetMuscles': ["Abs", "Obliques", "Hip Flexors"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/abs_MountainClimber 1.jpg", "assets/images/abs_MountainClimber 2.jpg"],
       },
     ];
   }

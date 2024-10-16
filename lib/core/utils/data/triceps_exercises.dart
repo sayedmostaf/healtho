@@ -15,7 +15,7 @@ class TricepsExercises {
         ],
         'equipmentRequired': "Bench",
         'targetMuscles': ["Triceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/triceps_Dips 1.jpg", "assets/images/triceps_Dips 2.jpg"],
       },
       {
         'title': "Close-Grip Bench Press",
@@ -28,7 +28,7 @@ class TricepsExercises {
         ],
         'equipmentRequired': "Barbell, Bench",
         'targetMuscles': ["Triceps", "Chest", "Shoulders"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/triceps_CloseGripBenchPress 1.jpg", "assets/images/triceps_CloseGripBenchPress 2.jpg"],
       },
       {
         'title': "Triceps Kickback",
@@ -42,7 +42,7 @@ class TricepsExercises {
         ],
         'equipmentRequired': "Dumbbells",
         'targetMuscles': ["Triceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/triceps_Kickback 1.jpg", "assets/images/triceps_Kickback 2.jpg"],
       },
       {
         'title': "Skull Crushers",
@@ -56,7 +56,7 @@ class TricepsExercises {
         ],
         'equipmentRequired': "EZ Curl Bar, Bench",
         'targetMuscles': ["Triceps"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/triceps_SkullCrushers 1.jpg", "assets/images/triceps_SkullCrushers 2.jpg"],
       },
       {
         'title': "Dumbbell Floor Press",
@@ -69,7 +69,7 @@ class TricepsExercises {
         ],
         'equipmentRequired': "Dumbbells",
         'targetMuscles': ["Triceps", "Chest"],
-        'how_to': ["", ""],
+        'how_to': ["assets/images/triceps_DumbbellFloorPress 1.jpg", "assets/images/triceps_DumbbellFloorPress 2.jpg"],
       },
     ];
   }
